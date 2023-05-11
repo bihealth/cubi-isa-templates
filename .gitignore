@@ -1,0 +1,40 @@
+### pip ###
+src/
+*.egg-info/
+
+# Built distribution files
+build/
+dist/
+
+### Virtualenv ###
+.venv/
+venv/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Pycharm
+.idea/*
+docs/pycharm/*
+
+# Vscode
+.vscode/*
+
+# Basics
+*.py[cod]
+__pycache__
+
+# Logs
+logs
+*.log
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+htmlcov
+coverage.xml
+.pytest_cache

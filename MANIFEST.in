@@ -1,0 +1,2 @@
+recursive-include cubi_isa_templates *
+recursive-exclude */__pycache__ *
