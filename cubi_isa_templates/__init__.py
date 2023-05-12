@@ -1,4 +1,48 @@
-"""CUBI ISA-Tab templates"""
+"""
+``cubi-isa-templates``: Create ISA-tab TSV files from templates with `Cookiecutter`_.
+
+This repository contains ISA-Tab templates originally in the ``dubi-tk`` package. They can be
+imported to be used in other projects with minimal external depdendencies.
+
+Available Templates
+-------------------
+
+The `Cookiecutter`_ directories are located in this module's directory.  Currently available
+templates are:
+
+- ``isatab-generic``
+- ``isatab-germline``
+- ``isatab-microarray``
+- ``isatab-ms_meta_biocrates``
+- ``isatab-single_cell_rnaseq``
+- ``isatab-stem_cell_core``
+- ``isatab-stem_cell_core_bulk``
+- ``isatab-stem_cell_core_sc``
+- ``isatab-bulk_rnaseq``
+- ``isatab-tumor_normal_dna``
+- ``isatab-tumor_normal_triplets``
+
+Adding Templates
+----------------
+
+Adding templates consists of the following steps:
+
+1. Add a new template directory below ``cubi_isa_templates``.
+2. Register the directory by appending a ``IsaTabTemplate`` object to ``_TEMPLATES`` in
+   ``cubi_isa_templates/__init__.py``.
+3. Add it to the list above in the docstring.
+4. Submit a pull request for the addition.
+
+The easiest way to start out is to copy an existing cookiecutter template and registration.
+
+More Information
+----------------
+
+For using these in ``cubi-tk``, see ``cubi-tk isa-tpl`` CLI documentation and
+``cubi-tk isa-tab --help`` for more information.
+
+.. _Cookiecutter: https://cookiecutter.readthedocs.io/
+"""
 
 import attr
 import json
