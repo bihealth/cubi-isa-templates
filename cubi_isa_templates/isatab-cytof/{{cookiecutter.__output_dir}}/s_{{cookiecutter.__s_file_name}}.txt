@@ -1,0 +1,10 @@
+{% set source_characteristics = cookiecutter.source_characteristics.split(",") -%}
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_conditions = cookiecutter.sample_conditions.split(",") -%}
+{% set sample_collection_parameters = cookiecutter.sample_collection_parameters.split(",") -%}
+Source Name	Characteristics[Organism]	Term Source REF	Term Accession Number	Characteristics[Material]	Term Source REF	Term Accession Number{% if cookiecutter.tissue != "No" %}	Characteristics[Tissue]	Term Source REF	Term Accession Number{% endif %}{%+ for characteristic in source_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}	Protocol REF	Parameter Value[Method]{%+ for parameter in sample_collection_parameters %}	Parameter Value[{{parameter}}]{% endfor %}	Performer	Date	Sample Name	Factor Value[Sample frozen]
+{%+ for source_name in source_names -%}
+{%+ for sample_condition in sample_conditions -%}
+{{source_name|replace("-", "_")}}	{{cookiecutter.organism}}	NCBITAXON	http://purl.bioontology.org/ontology/NCBITAXON/{{cookiecutter.__organism_taxon[cookiecutter.organism]}}	{{cookiecutter.material}}	NCIT	http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl{{cookiecutter.__material_ncit[cookiecutter.material]}}{% if cookiecutter.tissue != "No" %}	{{cookiecutter.tissue}}	NCIT	http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl{{cookiecutter.__tissue_ncit[cookiecutter.tissue]}}{% endif %}{%+ for characteristic in source_characteristics %}	{% endfor %}	Sample collection	{%+ for parameter in sample_collection_parameters %}	{% endfor %}			{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}	
+{% endfor -%}
+{% endfor -%}

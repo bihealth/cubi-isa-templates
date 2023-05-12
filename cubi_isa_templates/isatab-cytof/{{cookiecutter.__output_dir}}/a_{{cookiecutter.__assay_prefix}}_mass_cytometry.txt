@@ -1,0 +1,8 @@
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_conditions = cookiecutter.sample_conditions.split(",") -%}
+Sample Name{% if cookiecutter.dissociation_type != "No" %}	Protocol REF	Parameter Value[Dissociation method]	Performer	Date{% endif %}{% if cookiecutter.sample_multiplexing != "No" %}	Protocol REF	Parameter Value[Multiplexing method]	Parameter Value[Barcode ID]	Parameter Value[Barcode key]	Comment[Report file]	Performer	Date{% endif %}	Protocol REF	Parameter Value[Antibody panel]	Comment[Report file]	Performer	Date	Protocol REF	Parameter Value[Cell count pre acquisition]	Parameter Value[Cells acquired]	Comment[Report file]	Performer	Date	Extract Name	Protocol REF	Comment[Report file]	Performer	Date
+{%+ for source_name in source_names -%}
+{%+ for sample_condition in sample_conditions -%}
+{{source_name|replace("-", "_")}}_{{sample_condition|replace("-", "_")}}{% if cookiecutter.dissociation_type != "No"%}	Dissociation	{{cookiecutter.dissociation_type}}		{% endif %}{% if cookiecutter.sample_multiplexing != "No" %}	Multiplexing	{{cookiecutter.sample_multiplexing}}					{% endif %}	Antibody staining					Mass cytometry							Initial data processing			
+{% endfor -%}
+{% endfor -%}

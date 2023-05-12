@@ -90,6 +90,12 @@ _TEMPLATES = (
         configuration=load_variables("isatab-single_cell_rnaseq"),
     ),
     IsaTabTemplate(
+        name="mass_cytometry",
+        path=os.path.join(_BASE_DIR, "isatab-cytof"),
+        description="Mass cytometry ISA-tab template",
+        configuration=load_variables("isatab-cytof"),
+    ),
+    IsaTabTemplate(
         name="bulk_rnaseq",
         path=os.path.join(_BASE_DIR, "isatab-bulk_rnaseq"),
         description="bulk RNA sequencing ISA-tab template",
