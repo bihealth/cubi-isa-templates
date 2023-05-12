@@ -29,8 +29,9 @@
 	  "Intestinal epithelium": "%23C49240"
 	},
     "source_characteristics": "Origin,Passage",
-    "sample_conditions": "condition1,condition2",
-    "sample_collection_parameters": "Treatment target,Treatment substance,Treatment time",
+    "sample_suffixes": "sample1,sample2",
+    "sample_factors": "Treatment target,Treatment substance,Treatment time,Frozen",
+    "sample_factor_types": "intracellular structure,chemical compound,time span,logical",
     "dissociation_type": ["No", "pre-fix Trypsin", "post-fix Trypsin", "post-fix Octo"],
     "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
     "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')}}",

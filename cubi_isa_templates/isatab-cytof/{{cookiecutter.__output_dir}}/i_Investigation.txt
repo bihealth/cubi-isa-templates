@@ -1,4 +1,5 @@
-{% set sample_collection_parameters = cookiecutter.sample_collection_parameters.split(",") -%}
+{% set sample_factors = cookiecutter.sample_factors.split(",") -%}
+{% set sample_factor_types = cookiecutter.sample_factor_types.split(",") -%}
 ONTOLOGY SOURCE REFERENCE
 Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	NCIT
 Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/NCIT
@@ -50,10 +51,10 @@ Study Publication Status
 Study Publication Status Term Accession Number
 Study Publication Status Term Source REF
 STUDY FACTORS
-Study Factor Name	Sample frozen
-Study Factor Type	logical
-Study Factor Type Term Accession Number	
-Study Factor Type Term Source REF	
+Study Factor Name{%+ for factor in sample_factors %}	{{factor}}{% endfor %}
+Study Factor Type{%+ for factor in sample_factor_types %}	{{factor}}{% endfor %}
+Study Factor Type Term Accession Number{%+ for factor in sample_factors %}	{% endfor %}
+Study Factor Type Term Source REF{%+ for factor in sample_factors %}	{% endfor %}
 STUDY ASSAYS
 Study Assay File Name	a_{{cookiecutter.__assay_prefix}}_mass_cytometry.txt
 Study Assay Measurement Type	protein expression profiling
@@ -71,9 +72,9 @@ Study Protocol Type Term Source REF	""	""	""	""	""	""
 Study Protocol Description	""	""	""	""	""	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method{%+ for parameter in sample_collection_parameters %};{{parameter}}{% endfor %}	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired	
-Study Protocol Parameters Name Term Accession Number	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	""	";"	""
-Study Protocol Parameters Name Term Source REF	"{%+ for parameter in sample_collection_parameters %};{% endfor %}"	""	";;"	""	";"	""
+Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired	
+Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";"	""
+Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";"	""
 Study Protocol Components Name	""	""	""	""	""	""
 Study Protocol Components Type	""	""	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
