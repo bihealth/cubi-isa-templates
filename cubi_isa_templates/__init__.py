@@ -15,7 +15,6 @@ templates are:
 - ``isatab-microarray``
 - ``isatab-ms_meta_biocrates``
 - ``isatab-single_cell_rnaseq``
-- ``isatab-stem_cell_core``
 - ``isatab-stem_cell_core_bulk``
 - ``isatab-stem_cell_core_sc``
 - ``isatab-bulk_rnaseq``
