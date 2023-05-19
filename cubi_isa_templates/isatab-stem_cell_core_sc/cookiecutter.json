@@ -4,7 +4,7 @@
   "sample_names": "sample1,sample2",
   "investigation_title": "{{cookiecutter.group}} - {{cookiecutter.study_title}}",
   "source_type": ["hiPSC", "tissue"],
-  "cellline": "",
+  "cellline": "CL123",
   "cellculture_meta": "Expansion ID,Media,Matrix",
   "model_type": ["3D", "2D"],
   "sample_meta": "Experiment Name,Experiment Identifier,Tissue type,Differentiation duration,Condition,Treatment,Treatment duration",
