@@ -5,7 +5,8 @@
     "source_names": "source1,source2",
     "organism": [
       "Homo sapiens",
-      "Mus musculus"
+      "Mus musculus",
+      "Other"
     ],
     "__organism_taxon": {
         "Homo sapiens": "9606",
@@ -14,7 +15,8 @@
     "material": [
       "Cell line",
       "Organoid",
-      "PBMC sample"
+      "PBMC sample",
+      "Other"
     ],
     "__material_ncit": {
     	"Cell line": "%23C16403",
@@ -23,15 +25,17 @@
     },
     "tissue": [
       "No",
-      "Intestinal epithelium"
+      "Intestinal epithelium",
+      "Other"
     ],
     "__tissue_ncit": {
       "Intestinal epithelium": "%23C49240"
     },
     "source_characteristics": "Origin,Passage",
     "sample_suffixes": "sample1,sample2",
-    "sample_factors": "Treatment target,Treatment substance,Treatment time,Frozen",
-    "sample_factor_types": "intracellular structure,chemical compound,time span,logical",
+    "sample_characteristics": "Frozen",
+    "sample_factors": "Treatment target,Treatment substance,Treatment time",
+    "sample_factor_types": "intracellular structure,chemical compound,time span",
     "dissociation_type": ["No", "pre-fix Trypsin", "post-fix Trypsin", "post-fix Octo"],
     "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
     "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')}}",
