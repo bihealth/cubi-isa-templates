@@ -1,7 +1,7 @@
 {
   "group": "CoreRnD",
   "study_title": "Study Title",
-  "sample_names": "sample1,sample2",
+  "source_names": "sample1,sample2",
   "investigation_title": "{{cookiecutter.group}} - {{cookiecutter.study_title}}",
   "source_type": ["hiPSC", "tissue"],
   "cellline": "BIHiXXX-Y",
