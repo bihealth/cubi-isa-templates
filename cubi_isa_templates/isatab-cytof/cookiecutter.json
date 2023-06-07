@@ -1,0 +1,44 @@
+{
+  "investigation_identifier": "Investigation_ID",
+  "investigation_title": "Investigation Title",
+  "investigation_description": "",
+  "source_names": "source1,source2",
+  "organism": [
+    "Homo sapiens",
+    "Mus musculus",
+    "Other"
+  ],
+  "__organism_taxon": {
+      "Homo sapiens": "9606",
+      "Mus musculus": "10090"
+  },
+  "material": [
+    "Cell line",
+    "Organoid",
+    "PBMC sample",
+    "Other"
+  ],
+  "__material_ncit": {
+    "Cell line": "%23C16403",
+    "Organoid": "%23C172259",
+    "PBMC sample": "%23C178965"
+  },
+  "tissue": [
+    "No",
+    "Intestinal epithelium",
+    "Other"
+  ],
+  "__tissue_ncit": {
+    "Intestinal epithelium": "%23C49240"
+  },
+  "source_characteristics": "Origin,Passage",
+  "sample_suffixes": "sample1,sample2",
+  "sample_characteristics": "Frozen",
+  "sample_factors": "Treatment target,Treatment substance,Treatment time",
+  "sample_factor_types": "intracellular structure,chemical compound,time span",
+  "dissociation_type": ["No", "pre-fix Trypsin", "post-fix Trypsin", "post-fix Octo"],
+  "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
+  "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')}}",
+  "__assay_prefix": "{{cookiecutter.__s_file_name}}",
+  "__output_dir": "Required variable. Do not remove."
+}

@@ -20,6 +20,7 @@ templates are:
 - ``isatab-bulk_rnaseq``
 - ``isatab-tumor_normal_dna``
 - ``isatab-tumor_normal_triplets``
+- ``isatab-cytof``
 
 Adding Templates
 ----------------
@@ -142,6 +143,12 @@ _TEMPLATES = (
         description="Single cell RNA sequencing ISA-tab template from hiPSC for stem cell core "
         "projects",
         configuration=load_variables("isatab-stem_cell_core_sc"),
+    ),
+    IsaTabTemplate(
+        name="mass_cytometry",
+        path=os.path.join(_BASE_DIR, "isatab-cytof"),
+        description="Mass cytometry ISA-tab template",
+        configuration=load_variables("isatab-cytof"),
     ),
 )
 
