@@ -20,7 +20,7 @@ templates are:
 - ``isatab-bulk_rnaseq``
 - ``isatab-tumor_normal_dna``
 - ``isatab-tumor_normal_triplets``
-- ``isatab-cytof``
+- ``isatab-mass_cytometry``
 
 Adding Templates
 ----------------
@@ -146,9 +146,9 @@ _TEMPLATES = (
     ),
     IsaTabTemplate(
         name="mass_cytometry",
-        path=os.path.join(_BASE_DIR, "isatab-cytof"),
+        path=os.path.join(_BASE_DIR, "isatab-mass_cytometry"),
         description="Mass cytometry ISA-tab template",
-        configuration=load_variables("isatab-cytof"),
+        configuration=load_variables("isatab-mass_cytometry"),
     ),
 )
 
