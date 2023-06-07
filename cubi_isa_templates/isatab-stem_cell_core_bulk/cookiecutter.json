@@ -4,7 +4,7 @@
   "sample_numbers": "0001,0002",
   "investigation_title": "{{cookiecutter.group}} - {{cookiecutter.study_title}}",
   "source_type": ["hiPSC", "tissue"],
-  "cellline": "",
+  "cellline": "BIHiXXX-Y",
   "cellculture_meta": "Expansion ID,Media,Matrix",
   "model_type": ["2D", "3D"],
   "sample_meta": "Experiment Name,Experiment Identifier,Tissue type,Differentiation duration,Condition,Treatment,Treatment duration",
