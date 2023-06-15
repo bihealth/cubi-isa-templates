@@ -1,6 +1,6 @@
 {
   "investigation_title": "Investigation Title",
-  "sample_names": "sample1,sample2",
+  "source_names": "sample1,sample2",
   "a_measurement_type": [
       "transcription profiling"
   ],

@@ -1,6 +1,6 @@
 {
   "investigation_title": "Investigation Title",
-  "sample_names": "normal,tumor",
+  "source_names": "normal,tumor",
   "a_measurement_type": [
     "exome sequencing",
     "genome sequencing",
@@ -61,7 +61,7 @@
   "a_technology_type": "nucleotide sequencing",
   "a_measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
   "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
-  "sample_type": "x-generic-remote",
+  "source_type": "x-generic-remote",
   "lib_strategy": "{% if cookiecutter.a_measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
   "lib_selection": "{% if cookiecutter.a_measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
   "lib_layout": [

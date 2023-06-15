@@ -5,7 +5,7 @@
   "study_id": "{{cookiecutter.study_title|lower|replace(' ', '_')}}",
   "study_file_name": "{{cookiecutter.study_id}}",
 
-  "sample_names": "alpha,beta,gamma",
+  "source_names": "alpha,beta,gamma",
   
   "organism": [
     "Homo sapiens",
