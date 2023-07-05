@@ -65,20 +65,20 @@ Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo
 Study Assay Technology Type Term Source REF	OBI
 Study Assay Technology Platform	Helios
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Initial data processing
-Study Protocol Type	sample collection	dissociation	multiplexing	antibody staining	mass cytometry	data processing
-Study Protocol Type Term Accession Number	""	""	""	""	""	""
-Study Protocol Type Term Source REF	""	""	""	""	""	""
-Study Protocol Description	""	""	""	""	""	"De-multiplexing & quality gating"
-Study Protocol URI	""	""	""	""	""	""
-Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired	
-Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";"	""
-Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";"	""
-Study Protocol Components Name	""	""	""	""	""	""
-Study Protocol Components Type	""	""	""	""	""	""
-Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
-Study Protocol Components Type Term Source REF	""	""	""	""	""	""
+Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Initial data processing
+Study Protocol Type	sample collection	dissociation	multiplexing	antibody staining	mass cytometry	data normalization	data processing
+Study Protocol Type Term Accession Number	""	""	""	""	""	""	""
+Study Protocol Type Term Source REF	""	""	""	""	""	""	""
+Study Protocol Description	""	""	""	""	"Data acquisition"	"Bead standard normalization"	"De-multiplexing & quality gating"
+Study Protocol URI	""	""	""	""	""	""	""
+Study Protocol Version	""	""	""	""	""	""	""
+Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired		
+Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";"	""	""
+Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";"	""	""
+Study Protocol Components Name	""	""	""	""	""	""	""
+Study Protocol Components Type	""	""	""	""	""	""	""
+Study Protocol Components Type Term Accession Number	""	""	""	""	""	""	""
+Study Protocol Components Type Term Source REF	""	""	""	""	""	""	""
 STUDY CONTACTS
 Study Person Last Name
 Study Person First Name
