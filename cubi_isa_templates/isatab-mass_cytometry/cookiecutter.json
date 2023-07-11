@@ -8,7 +8,7 @@
     "Mus musculus",
     "Other"
   ],
-  "__organism_taxon": {
+  "_organism_taxon": {
       "Homo sapiens": "9606",
       "Mus musculus": "10090"
   },
@@ -18,7 +18,7 @@
     "PBMC sample",
     "Other"
   ],
-  "__material_ncit": {
+  "_material_ncit": {
     "Cell line": "%23C16403",
     "Organoid": "%23C172259",
     "PBMC sample": "%23C178965"
@@ -28,7 +28,7 @@
     "Intestinal epithelium",
     "Other"
   ],
-  "__tissue_ncit": {
+  "_tissue_ncit": {
     "Intestinal epithelium": "%23C49240"
   },
   "source_characteristics": "Origin,Passage",
