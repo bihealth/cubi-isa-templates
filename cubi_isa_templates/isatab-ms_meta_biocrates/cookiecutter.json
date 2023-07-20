@@ -11,7 +11,7 @@
     "Homo sapiens",
     "Mus musculus"
   ],
-  "organisms": {
+  "_organisms": {
     "Homo sapiens": {
       "name": "Homo sapiens",
       "taxon": "9606"
@@ -28,7 +28,7 @@
   "assay_technology_type": [
     "mass spectrometry"
   ],
-  "assay_technology_types": {
+  "_technology_types": {
     "mass spectrometry": {
       "term": "mass spectrometry",
       "source": "OBI",
@@ -60,7 +60,7 @@
     "Sciex 5500",
     "TSQ Quantiva"
   ],
-  "instruments": {
+  "_instruments": {
     "Sciex 5500": {
       "term": "QTRAP 5500",
       "source": "MS",

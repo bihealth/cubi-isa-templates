@@ -62,9 +62,9 @@ Study Assay File Name	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}
 Study Assay Measurement Type	{{cookiecutter.assay_measurement_type}}	{{cookiecutter.assay_measurement_type}}
 Study Assay Measurement Type Term Accession Number	""	""
 Study Assay Measurement Type Term Source REF	""	""
-Study Assay Technology Type	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].term}}	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].term}}
-Study Assay Technology Type Term Accession Number	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].accession}}	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].accession}}
-Study Assay Technology Type Term Source REF	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].source}}	{{cookiecutter.assay_technology_types[cookiecutter.assay_technology_type].source}}
+Study Assay Technology Type	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].term}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].term}}
+Study Assay Technology Type Term Accession Number	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].accession}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].accession}}
+Study Assay Technology Type Term Source REF	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}
 Study Assay Technology Platform	{{cookiecutter.biocrates_kit}}	{{cookiecutter.biocrates_kit}}
 STUDY PROTOCOLS
 Study Protocol Name	Sample collection	Extraction {{cookiecutter.assay_measurement_abbreviation_LC}}	Labeling {{cookiecutter.assay_measurement_abbreviation_LC}}	Chromatography {{cookiecutter.assay_measurement_abbreviation_LC}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_LC}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_LC}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_LC}}	Extraction {{cookiecutter.assay_measurement_abbreviation_FIA}}	Labeling {{cookiecutter.assay_measurement_abbreviation_FIA}}	Flow Injection Analysis {{cookiecutter.assay_measurement_abbreviation_FIA}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_FIA}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_FIA}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_FIA}}
