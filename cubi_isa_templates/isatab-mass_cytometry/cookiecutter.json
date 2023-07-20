@@ -43,15 +43,15 @@
   "__output_dir": "Required variable. Do not remove.",
   "__prompts__": {
     "investigation_identifier": "Short project title or acronym",
-	"investigation_title": "Longer project title",
-	"investigation_description": "Description of project (optional)",
-	"source_names": "Patient IDs, cell lines, model systems, etc.",
-	"source_characteristics": "Additional source characteristics as comma-separated list",
-	"sample_suffixes": "List of suffixes to create unique sample IDs from source names",
-	"sample_factors": "Sample factors as comma-separated list",
-	"sample_factor_types": "Sample factor types as comma-separated list (same length as factors)",
-	"sample_characteristics": "Sample characteristics as comma-separated list",
-	"dissociation_type": "Select dissociation method used",
-	"sample_multiplexing": "Select multiplexing method used"
+	  "investigation_title": "Longer project title",
+	  "investigation_description": "Description of project (optional)",
+	  "source_names": "Patient IDs, cell lines, model systems, etc.",
+	  "source_characteristics": "Additional source characteristics as comma-separated list",
+	  "sample_suffixes": "List of suffixes to create unique sample IDs from source names",
+	  "sample_factors": "Sample factors as comma-separated list",
+	  "sample_factor_types": "Sample factor types as comma-separated list (same length as factors)",
+	  "sample_characteristics": "Sample characteristics as comma-separated list",
+	  "dissociation_type": "Select dissociation method used",
+	  "sample_multiplexing": "Select multiplexing method used"
   }
 }
