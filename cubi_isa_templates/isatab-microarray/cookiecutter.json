@@ -1,6 +1,6 @@
 {
   "investigation_title": "Investigation Title",
-  "sample_names": "alpha,beta,gamma",
+  "source_names": "alpha,beta,gamma",
   "a_measurement_type": [
       "transcription profiling"
   ],

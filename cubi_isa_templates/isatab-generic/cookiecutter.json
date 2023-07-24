@@ -1,6 +1,6 @@
 {
   "investigation_title": "Investigation Title",
-  "sample_names": "alpha,beta,gamma",
+  "source_names": "alpha,beta,gamma",
   "a_measurement_type": [
       "transcription profiling"
   ],
@@ -50,7 +50,7 @@
   "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
   "a_measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'transcription profiling' %}mRNA_seq{% else %}UNKNOWN{% endif %}",
   "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
-  "sample_type": "x-charite-medgen-blood-book-id",
+  "source_type": "x-charite-medgen-blood-book-id",
   "lib_strategy": "{% if cookiecutter.a_measurement_abbreviation == 'mRNA_seq' %}RNA-seq{% else %}UNKNOWN{% endif %}",
   "lib_selection": "{% if cookiecutter.a_measurement_abbreviation == 'mRNA_seq' %}PolyA{% else %}UNKNOWN{% endif %}",
   "lib_layout": [ "PAIRED", "SINGLE" ],
