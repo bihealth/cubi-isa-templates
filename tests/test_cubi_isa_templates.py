@@ -12,6 +12,7 @@ import cubi_isa_templates
 @pytest.mark.filterwarnings("error::altamisa.exceptions.CriticalIsaValidationWarning")
 @pytest.mark.parametrize("tpl", cubi_isa_templates.TEMPLATES.values())
 def test_isatabs(tpl, tmp_path):
+    print("Testing " + tpl.name)
     for key, value in tpl.configuration.items():
         if isinstance(value, list) and not key.startswith("_"):
             for choice in value:
