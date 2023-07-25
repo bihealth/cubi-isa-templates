@@ -8,7 +8,7 @@
     "Homo sapiens",
     "Mus musculus"
   ],
-  "organisms": {
+  "_organisms": {
     "Homo sapiens": {
       "name": "Homo sapiens",
       "taxon": "9606"
@@ -27,7 +27,7 @@
   "a_technology_type": "microarray",
   "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
   
-  "terms": {
+  "_terms": {
     "transcription profiling": {
       "accession_number": "http://purl.obolibrary.org/obo/OBI_0000424",
       "source_ref": "OBI"

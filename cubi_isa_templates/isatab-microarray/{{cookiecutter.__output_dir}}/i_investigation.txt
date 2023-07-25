@@ -60,11 +60,11 @@ Study Factor Type Term Source REF	""
 STUDY ASSAYS
 Study Assay File Name	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}.txt
 Study Assay Measurement Type	{{cookiecutter.a_measurement_type}}
-Study Assay Measurement Type Term Accession Number	{{cookiecutter.terms[cookiecutter.a_measurement_type].accession_number}}
-Study Assay Measurement Type Term Source REF	{{cookiecutter.terms[cookiecutter.a_measurement_type].source_ref}}
+Study Assay Measurement Type Term Accession Number	{{cookiecutter._terms[cookiecutter.a_measurement_type].accession_number}}
+Study Assay Measurement Type Term Source REF	{{cookiecutter._terms[cookiecutter.a_measurement_type].source_ref}}
 Study Assay Technology Type	{{cookiecutter.a_technology_type}}
-Study Assay Technology Type Term Accession Number	{{cookiecutter.terms[cookiecutter.a_technology_type].accession_number}}
-Study Assay Technology Type Term Source REF	{{cookiecutter.terms[cookiecutter.a_technology_type].source_ref}}
+Study Assay Technology Type Term Accession Number	{{cookiecutter._terms[cookiecutter.a_technology_type].accession_number}}
+Study Assay Technology Type Term Source REF	{{cookiecutter._terms[cookiecutter.a_technology_type].source_ref}}
 Study Assay Technology Platform	{{cookiecutter.technology_platform}}
 STUDY PROTOCOLS
 Study Protocol Name	Sample collection	Nucleic acid extraction	Labeling	Nucleic acid hybridization	Data collection	Normalization data transformation	Data transformation

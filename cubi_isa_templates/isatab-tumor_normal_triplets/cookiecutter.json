@@ -16,7 +16,7 @@
     "Illumina TruSeq PCR-free",
     "Illumina TruSeq Nano"
   ],
-  "lib_kits": {
+  "_lib_kits": {
     "Agilent SureSelect Human All Exon V6r2": {
       "name": "Agilent SureSelect Human All Exon V6r2",
       "cat_id": "S04380110"

@@ -18,7 +18,7 @@
     "Illumina TruSeq Nano"
   ],
   "batch": "1",
-  "lib_kits": {
+  "_lib_kits": {
       "Agilent SureSelect Human All Exon V8": {
       "name": "Agilent SureSelect Human All Exon V8",
       "cat_id": "S33266436"

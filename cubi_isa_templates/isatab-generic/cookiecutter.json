@@ -4,14 +4,14 @@
   "a_measurement_type": [
       "transcription profiling"
   ],
-  "a_measurement_types": {
+  "_measurement_types": {
       "transcription profiling" : {
          "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
          "source" : "OBI"
       }
   },
   "a_technology_type": "nucleotide sequencing",
-  "a_technology_types": {
+  "_technology_types": {
       "nucleotide sequencing" : {
          "accession" : "http://purl.obolibrary.org/obo/OBI_0000626",
          "source" : "OBI"
@@ -26,12 +26,12 @@
     "Mus musculus"
   ],
   "batch": "1",
-  "lib_kits": {
+  "_lib_kits": {
     "Illumina TruSeq Stranded mRNA": {
       "name": "Illumina TruSeq Stranded mRNA"
     }
   },
-  "organisms": {
+  "_organisms": {
     "Homo sapiens": {
       "name": "Homo sapiens",
       "taxon": "9606"
