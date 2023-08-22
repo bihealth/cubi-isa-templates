@@ -1,8 +1,8 @@
 {
   "investigation_title": "Investigation Title",
   "study_title": "{{cookiecutter.investigation_title}}",
-  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
-  "sample_names": "patient1,patient2",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|lower}}",
+  "source_names": "patient1,patient2",
   "a_measurement_type": [
     "exome sequencing",
     "genome sequencing",
