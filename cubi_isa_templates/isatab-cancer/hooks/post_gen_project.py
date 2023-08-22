@@ -10,7 +10,6 @@ for path in REMOVE_PATHS:
     if path:
         path = Path(path)
         if path.exists():
-            print(str(path))
             if path.is_dir():
                 path.rmdir()
             else:

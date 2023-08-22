@@ -18,6 +18,7 @@ templates are:
 - ``isatab-stem_cell_core_bulk``
 - ``isatab-stem_cell_core_sc``
 - ``isatab-bulk_rnaseq``
+- ``isatab-cancer``
 - ``isatab-tumor_normal_dna``
 - ``isatab-tumor_normal_triplets``
 - ``isatab-mass_cytometry``
