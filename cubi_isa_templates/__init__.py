@@ -96,6 +96,12 @@ _TEMPLATES = (
         configuration=load_variables("isatab-generic"),
     ),
     IsaTabTemplate(
+        name="cancer",
+        path=os.path.join(_BASE_DIR, "isatab-cancer"),
+        description="Cancer sequencing ISA-tab template",
+        configuration=load_variables("isatab-cancer"),
+    ),
+    IsaTabTemplate(
         name="tumor_normal_dna",
         path=os.path.join(_BASE_DIR, "isatab-tumor_normal_dna"),
         description="Tumor-Normal DNA sequencing ISA-tab template",
