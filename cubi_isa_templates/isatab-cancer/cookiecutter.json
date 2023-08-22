@@ -10,7 +10,6 @@
     "panel sequencing"
   ],
   "a_technology_type": "nucleotide sequencing",
-  "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
   "lib_kit": [
     "Agilent SureSelect Human All Exon V6r2",
     "Agilent SureSelect Human All Exon V5",
