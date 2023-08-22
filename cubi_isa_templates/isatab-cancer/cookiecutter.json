@@ -2,7 +2,6 @@
   "investigation_title": "Investigation Title",
   "study_title": "{{cookiecutter.investigation_title}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
-  "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
   "sample_names": "patient1,patient2",
   "a_measurement_type": [
     "exome sequencing",
@@ -64,5 +63,9 @@
     "PAIRED",
     "SINGLE"
   ],
+  "__prompts__": {
+	  "lib_kit": "Select library kit used:",
+	  "is_triplet": "Add RNA sequencing assay?:"
+  },
   "__output_dir": "Required variable. Do not remove."
 }
