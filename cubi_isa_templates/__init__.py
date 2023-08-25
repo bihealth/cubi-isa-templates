@@ -97,12 +97,6 @@ _TEMPLATES = (
         configuration=load_variables("isatab-generic"),
     ),
     IsaTabTemplate(
-        name="cancer",
-        path=os.path.join(_BASE_DIR, "isatab-cancer"),
-        description="Cancer sequencing ISA-tab template",
-        configuration=load_variables("isatab-cancer"),
-    ),
-    IsaTabTemplate(
         name="tumor_normal_dna",
         path=os.path.join(_BASE_DIR, "isatab-tumor_normal_dna"),
         description="Tumor-Normal DNA sequencing ISA-tab template",
@@ -137,6 +131,12 @@ _TEMPLATES = (
         path=os.path.join(_BASE_DIR, "isatab-ms_meta_biocrates"),
         description="MS Metabolomics Biocrates kit ISA-tab template",
         configuration=load_variables("isatab-ms_meta_biocrates"),
+    ),
+    IsaTabTemplate(
+        name="somatic",
+        path=os.path.join(_BASE_DIR, "isatab-somatic"),
+        description="Somatic sequencing ISA-tab template",
+        configuration=load_variables("isatab-somatic"),
     ),
     IsaTabTemplate(
         name="stem_cell_core_bulk",
