@@ -55,10 +55,10 @@
   },
   "instrument": "Illumina NextSeq 500",
   "is_triplet": false,
-  "a_measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
   "sample_type": "x-generic-remote",
-  "lib_strategy": "{% if cookiecutter.a_measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
-  "lib_selection": "{% if cookiecutter.a_measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
+  "__measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
+  "__lib_strategy": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
+  "__lib_selection": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
   "lib_layout": [
     "PAIRED",
     "SINGLE"

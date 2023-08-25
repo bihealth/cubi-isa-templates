@@ -67,8 +67,8 @@ Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo
 Study Assay Technology Type Term Source REF	OBI{% if cookiecutter.is_triplet == True %}	OBI{% endif %}
 Study Assay Technology Platform	Illumina{% if cookiecutter.is_triplet == True %}	Illumina{% endif %}
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Nucleic acid extraction {{cookiecutter.a_measurement_abbreviation}}	Library construction {{cookiecutter.a_measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.a_measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
-Study Protocol Type	Sample collection	Nucleic acid extraction {{cookiecutter.a_measurement_abbreviation}}	Library construction {{cookiecutter.a_measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.a_measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
+Study Protocol Name	Sample collection	Nucleic acid extraction {{cookiecutter.__measurement_abbreviation}}	Library construction {{cookiecutter.__measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.__measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
+Study Protocol Type	Sample collection	Nucleic acid extraction {{cookiecutter.__measurement_abbreviation}}	Library construction {{cookiecutter.__measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.__measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
 Study Protocol Type Term Accession Number	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
 Study Protocol Type Term Source REF	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
 Study Protocol Description	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
