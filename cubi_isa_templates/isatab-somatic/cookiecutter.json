@@ -18,39 +18,15 @@
     "Illumina TruSeq PCR-free",
     "Illumina TruSeq Nano"
   ],
-  "_lib_kits": {
-    "Agilent SureSelect Human All Exon V6r2": {
-      "name": "Agilent SureSelect Human All Exon V6r2",
-      "cat_id": "S04380110"
-    },
-    "Agilent SureSelect Human All Exon V5": {
-      "name": "Agilent SureSelect Human All Exon V5",
-      "cat_id": "S04380110"
-    },
-    "Agilent SureSelect Human All Exon V4": {
-      "name": "Agilent SureSelect Human All Exon V4",
-      "cat_id": "S03723314"
-    },
-    "Agilent SureSelect Human All Exon V7": {
-      "name": "Agilent SureSelect Human All Exon V7",
-      "cat_id": "S31285117"
-    },
-    "IDT xGen Exome Research Panel V1.0": {
-      "name": "IDT xGen Exome Research Panel V1.0",
-      "cat_id": ""
-    },
-    "IDT xGen Exome Research Panel V1.0 with YCGA 620kbp spike-in": {
-      "name": "IDT xGen Exome Research Panel V1.0 with YCGA 620kbp spike-in",
-      "cat_id": ""
-    },
-    "Illumina TruSeq PCR-free": {
-      "name": "Illumina TruSeq PCR-free",
-      "cat_id": ""
-    },
-    "Illumina TruSeq Nano": {
-      "name": "Illumina TruSeq Nano",
-      "cat_id": ""
-    }
+  "_lib_kit_cat_ids": {
+    "Agilent SureSelect Human All Exon V6r2": "S04380110",
+    "Agilent SureSelect Human All Exon V5": "S04380110",
+    "Agilent SureSelect Human All Exon V4": "S03723314",
+    "Agilent SureSelect Human All Exon V7": "S31285117",
+    "IDT xGen Exome Research Panel V1.0": "",
+    "IDT xGen Exome Research Panel V1.0 with YCGA 620kbp spike-in": "",
+    "Illumina TruSeq PCR-free": "",
+    "Illumina TruSeq Nano": ""
   },
   "instrument": "Illumina NextSeq 500",
   "is_triplet": false,
