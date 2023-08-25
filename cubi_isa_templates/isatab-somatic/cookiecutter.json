@@ -5,8 +5,7 @@
   "source_names": "patient1,patient2",
   "a_measurement_type": [
     "exome sequencing",
-    "genome sequencing",
-    "panel sequencing"
+    "genome sequencing"
   ],
   "a_technology_type": "nucleotide sequencing",
   "lib_kit": [
