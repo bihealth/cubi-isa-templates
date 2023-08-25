@@ -97,18 +97,6 @@ _TEMPLATES = (
         configuration=load_variables("isatab-generic"),
     ),
     IsaTabTemplate(
-        name="tumor_normal_dna",
-        path=os.path.join(_BASE_DIR, "isatab-tumor_normal_dna"),
-        description="Tumor-Normal DNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-tumor_normal_dna", {"is_triplet": False}),
-    ),
-    IsaTabTemplate(
-        name="tumor_normal_triplets",
-        path=os.path.join(_BASE_DIR, "isatab-tumor_normal_triplets"),
-        description="Tumor-Normal DNA+RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-tumor_normal_triplets", {"is_triplet": True}),
-    ),
-    IsaTabTemplate(
         name="germline",
         path=os.path.join(_BASE_DIR, "isatab-germline"),
         description="germline DNA sequencing ISA-tab template",
