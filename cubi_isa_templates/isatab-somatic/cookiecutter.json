@@ -44,7 +44,6 @@
 	  "NextSeq 1000"
   ],
   "is_triplet": false,
-  "sample_type": "x-generic-remote",
   "__assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}",
   "__measurement_abbreviation": "{% if cookiecutter.measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
   "__lib_strategy": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
