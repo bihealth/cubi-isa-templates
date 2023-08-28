@@ -3,25 +3,27 @@
   "study_title": "{{cookiecutter.investigation_title}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|lower}}",
   "source_names": "patient1,patient2",
-  "a_measurement_type": [
+  "measurement_type": [
     "exome sequencing",
     "genome sequencing"
   ],
   "lib_kit": [
+    "Agilent SureSelect Human All Exon V8",
+    "Agilent SureSelect Human All Exon V7",
     "Agilent SureSelect Human All Exon V6r2",
     "Agilent SureSelect Human All Exon V5",
     "Agilent SureSelect Human All Exon V4",
-    "Agilent SureSelect Human All Exon V7",
     "IDT xGen Exome Research Panel V1.0",
     "IDT xGen Exome Research Panel V1.0 with YCGA 620kbp spike-in",
     "Illumina TruSeq PCR-free",
     "Illumina TruSeq Nano"
   ],
   "_lib_kit_cat_ids": {
+    "Agilent SureSelect Human All Exon V8": "S33266436",
+    "Agilent SureSelect Human All Exon V7": "S31285117",
     "Agilent SureSelect Human All Exon V6r2": "S04380110",
     "Agilent SureSelect Human All Exon V5": "S04380110",
     "Agilent SureSelect Human All Exon V4": "S03723314",
-    "Agilent SureSelect Human All Exon V7": "S31285117",
     "IDT xGen Exome Research Panel V1.0": "",
     "IDT xGen Exome Research Panel V1.0 with YCGA 620kbp spike-in": "",
     "Illumina TruSeq PCR-free": "",
@@ -43,7 +45,8 @@
   ],
   "is_triplet": false,
   "sample_type": "x-generic-remote",
-  "__measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
+  "__assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}",
+  "__measurement_abbreviation": "{% if cookiecutter.measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
   "__lib_strategy": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
   "__lib_selection": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
   "lib_layout": [

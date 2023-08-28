@@ -59,7 +59,7 @@ Study Factor Type Term Accession Number
 Study Factor Type Term Source REF
 STUDY ASSAYS
 Study Assay File Name	a_{{cookiecutter.s_file_name}}_{{cookiecutter.__assay_name}}.txt
-Study Assay Measurement Type	{{cookiecutter.a_measurement_type}}
+Study Assay Measurement Type	{{cookiecutter.measurement_type}}
 Study Assay Measurement Type Term Accession Number	""
 Study Assay Measurement Type Term Source REF	""
 Study Assay Technology Type	nucleotide sequencing

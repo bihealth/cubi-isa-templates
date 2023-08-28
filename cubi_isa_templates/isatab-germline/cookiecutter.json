@@ -3,7 +3,7 @@
   "study_title": "{{cookiecutter.investigation_title}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}|lower",
   "source_names": "index,mother,father",
-  "a_measurement_type": [
+  "measurement_type": [
       "exome sequencing",
       "genome sequencing",
       "panel sequencing"
@@ -33,8 +33,8 @@
   },
   "instrument": "Illumina NextSeq 500",
   "sample_type": "x-charite-medgen-blood-book-id",
-  "__assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}",
-  "__measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
+  "__assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}",
+  "__measurement_abbreviation": "{% if cookiecutter.measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
   "__lib_strategy": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
   "__lib_selection": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
   "lib_layout": "PAIRED",
