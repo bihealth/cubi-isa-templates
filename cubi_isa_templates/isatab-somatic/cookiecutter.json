@@ -27,7 +27,20 @@
     "Illumina TruSeq PCR-free": "",
     "Illumina TruSeq Nano": ""
   },
-  "instrument": "Illumina NextSeq 500",
+  "instrument": [
+      "NovaSeq 6000",
+	  "HiSeq 2000",
+	  "HiSeq 4000",
+	  "Illumina NextSeq 500",
+	  "iSeq",
+	  "MiSeq v2",
+	  "MiSeq v2 Nano",
+	  "MiSeq v3",
+	  "MiniSeq",
+	  "NovaSeq X",
+	  "NextSeq 500",
+	  "NextSeq 1000"
+  ],
   "is_triplet": false,
   "sample_type": "x-generic-remote",
   "__measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'exome sequencing' %}WES{% else %}WGS{% endif %}",
@@ -39,6 +52,7 @@
   ],
   "__prompts__": {
 	  "lib_kit": "Select library kit used:",
+	  "instrument": "Select sequencer used for this project:",
 	  "is_triplet": "Add RNA sequencing assay?:"
   },
   "__output_dir": "Required variable. Do not remove."
