@@ -10,18 +10,16 @@ Available Templates
 The `Cookiecutter`_ directories are located in this module's directory.  Currently available
 templates are:
 
+- ``isatab-bulk_rnaseq``
 - ``isatab-generic``
 - ``isatab-germline``
+- ``isatab-mass_cytometry``
 - ``isatab-microarray``
 - ``isatab-ms_meta_biocrates``
 - ``isatab-single_cell_rnaseq``
 - ``isatab-stem_cell_core_bulk``
 - ``isatab-stem_cell_core_sc``
-- ``isatab-bulk_rnaseq``
-- ``isatab-cancer``
-- ``isatab-tumor_normal_dna``
-- ``isatab-tumor_normal_triplets``
-- ``isatab-mass_cytometry``
+- ``isatab-somatic``
 
 Adding Templates
 ----------------
