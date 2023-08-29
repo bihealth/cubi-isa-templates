@@ -3,6 +3,22 @@
   "study_title": "{{cookiecutter.investigation_title}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|lower}}",
   "source_names": "patient1,patient2",
+  "neoplasm_type": [
+    "Primary Neoplasm",
+	"Secondary Neoplasm",
+	"Recurrent Neoplasm",
+	"Metastatic Neoplasm",
+	"Refractory Neoplasm",
+	"Benign Neoplasm"
+  ],
+  "_neoplasm_terms": {
+    "Primary Neoplasm": "%23C8509",
+	"Secondary Neoplasm": "%23C36255",
+	"Recurrent Neoplasm": "%23C4798",
+	"Metastatic Neoplasm": "%23C3261",
+	"Refractory Neoplasm": "%23C7628",
+	"Benign Neoplasm": "%23C3677"
+  },
   "measurement_type": [
     "exome sequencing",
     "genome sequencing"
