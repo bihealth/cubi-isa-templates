@@ -67,20 +67,20 @@ Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo
 Study Assay Technology Type Term Source REF	OBI{% if cookiecutter.is_triplet == True %}	OBI{% endif %}
 Study Assay Technology Platform	Illumina{% if cookiecutter.is_triplet == True %}	Illumina{% endif %}
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Nucleic acid extraction {{cookiecutter.__measurement_abbreviation}}	Library construction {{cookiecutter.__measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.__measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
-Study Protocol Type	Sample collection	Nucleic acid extraction {{cookiecutter.__measurement_abbreviation}}	Library construction {{cookiecutter.__measurement_abbreviation}}	Nucleic acid sequencing {{cookiecutter.__measurement_abbreviation}}{% if cookiecutter.is_triplet == True %}	Nucleic acid extraction RNA-Seq	Library construction RNA-Seq	Nucleic acid sequencing RNA-Seq{% endif %}
-Study Protocol Type Term Accession Number	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Type Term Source REF	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Description	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol URI	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Version	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Parameters Name	""	Concentration measurement	"Provider project ID;Library source;Library selection;Library layout;Barcode sequence;Wet-lab insert size;Requestor contact;Library kit;Library kit catalogue ID;Provider contact;Concentration measurement;Provider sample ID;Target insert size;Provider name;Requestor project;Requestor sample ID;Barcode kit;Barcode kit catalogue ID;Barcode name;Provider QC status;Library strategy"	"Base quality encoding;Platform;Center contact;Target read length;Target read length (mate 2);Instrument model;Center name"{% if cookiecutter.is_triplet == True %}	"Concentration measurement"	"Provider project ID;Library source;Library selection;Library layout;Barcode sequence;Wet-lab insert size;Requestor contact;Library kit;Library strand specificity;Library kit catalogue ID;Provider contact;Concentration measurement;Provider sample ID;Target insert size;Provider name;Requestor project;Requestor sample ID;Barcode kit;Barcode kit catalogue ID;Barcode name;Provider QC status;Library strategy"	"Base quality encoding;Platform;Center contact;Target read length;Target read length (mate 2);Instrument model;Center name"{% endif %}
-Study Protocol Parameters Name Term Accession Number	""	""	";;;;;;;;;;;;;;;;;;;;"	";;;;;;"{% if cookiecutter.is_triplet == True %}	""	";;;;;;;;;;;;;;;;;;;;;"	";;;;;;"{% endif %}
-Study Protocol Parameters Name Term Source REF	""	""	";;;;;;;;;;;;;;;;;;;;"	";;;;;;"{% if cookiecutter.is_triplet == True %}	""	";;;;;;;;;;;;;;;;;;;;;"	";;;;;;"{% endif %}
-Study Protocol Components Name	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Components Type	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Components Type Term Accession Number	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
-Study Protocol Components Type Term Source REF	""	""	""	""{% if cookiecutter.is_triplet == True %}	""	""	""{% endif %}
+Study Protocol Name	Sample collection	Nucleic acid extraction	Library construction	Nucleic acid sequencing
+Study Protocol Type	Sample collection	Nucleic acid extraction	Library construction	Nucleic acid sequencing
+Study Protocol Type Term Accession Number	""	""	""	""
+Study Protocol Type Term Source REF	""	""	""	""
+Study Protocol Description	""	""	""	""
+Study Protocol URI	""	""	""	""
+Study Protocol Version	""	""	""	""
+Study Protocol Parameters Name	""	Concentration measurement	"Provider project ID;Library source;Library selection;Library layout;Barcode sequence;Wet-lab insert size;Requestor contact;Library kit;Library kit catalogue ID;{% if cookiecutter.is_triplet == True %}Library strand specificity;{% endif %}Provider contact;Concentration measurement;Provider sample ID;Target insert size;Provider name;Requestor project;Requestor sample ID;Barcode kit;Barcode kit catalogue ID;Barcode name;Provider QC status;Library strategy"	"Base quality encoding;Platform;Center contact;Target read length;Target read length (mate 2);Instrument model;Center name"
+Study Protocol Parameters Name Term Accession Number	""	""	";;;;;;;;;;;;;;;;;;;;{% if cookiecutter.is_triplet == True %};{% endif %}"	";;;;;;"
+Study Protocol Parameters Name Term Source REF	""	""	";;;;;;;;;;;;;;;;;;;;{% if cookiecutter.is_triplet == True %};{% endif %}"	";;;;;;"
+Study Protocol Components Name	""	""	""	""
+Study Protocol Components Type	""	""	""	""
+Study Protocol Components Type Term Accession Number	""	""	""	""
+Study Protocol Components Type Term Source REF	""	""	""	""
 STUDY CONTACTS
 Study Person Last Name
 Study Person First Name
