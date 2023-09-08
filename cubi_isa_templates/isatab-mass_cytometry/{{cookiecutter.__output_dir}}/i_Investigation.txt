@@ -63,10 +63,10 @@ Study Assay Measurement Type Term Source REF	OBI
 Study Assay Technology Type	mass cytometry
 Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0002115
 Study Assay Technology Type Term Source REF	OBI
-Study Assay Technology Platform	Helios
+Study Assay Technology Platform	Standard BioTools
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Initial data processing
-Study Protocol Type	sample collection	dissociation	multiplexing	antibody staining	mass cytometry	data normalization	data processing
+Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Data processing
+Study Protocol Type	sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Data processing
 Study Protocol Type Term Accession Number	""	""	""	""	""	""	""
 Study Protocol Type Term Source REF	""	""	""	""	""	""	""
 Study Protocol Description	""	""	""	""	"Data acquisition"	"Bead standard normalization"	"De-multiplexing & quality gating"
