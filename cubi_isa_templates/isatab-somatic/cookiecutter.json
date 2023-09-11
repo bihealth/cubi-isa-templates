@@ -5,19 +5,19 @@
   "source_names": "patient1,patient2",
   "neoplasm_type": [
     "Primary Neoplasm",
-	"Secondary Neoplasm",
-	"Recurrent Neoplasm",
-	"Metastatic Neoplasm",
-	"Refractory Neoplasm",
-	"Benign Neoplasm"
+    "Secondary Neoplasm",
+    "Recurrent Neoplasm",
+    "Metastatic Neoplasm",
+    "Refractory Neoplasm",
+    "Benign Neoplasm"
   ],
   "_neoplasm_terms": {
     "Primary Neoplasm": "%23C8509",
-	"Secondary Neoplasm": "%23C36255",
-	"Recurrent Neoplasm": "%23C4798",
-	"Metastatic Neoplasm": "%23C3261",
-	"Refractory Neoplasm": "%23C7628",
-	"Benign Neoplasm": "%23C3677"
+    "Secondary Neoplasm": "%23C36255",
+    "Recurrent Neoplasm": "%23C4798",
+    "Metastatic Neoplasm": "%23C3261",
+    "Refractory Neoplasm": "%23C7628",
+    "Benign Neoplasm": "%23C3677"
   },
   "measurement_type": [
     "exome sequencing",
@@ -46,17 +46,19 @@
     "Illumina TruSeq Nano": ""
   },
   "instrument": [
-      "NovaSeq 6000",
-	  "HiSeq 2000",
-	  "HiSeq 4000",
-	  "iSeq",
-	  "MiSeq v2",
-	  "MiSeq v2 Nano",
-	  "MiSeq v3",
-	  "MiniSeq",
-	  "NovaSeq X",
-	  "NextSeq 500",
-	  "NextSeq 1000"
+    "NovaSeq 6000",
+    "HiSeq 2000",
+    "HiSeq 4000",
+    "iSeq",
+    "MiSeq v2",
+    "MiSeq v2 Nano",
+    "MiSeq v3",
+    "MiniSeq",
+    "NovaSeq X",
+    "NextSeq 500",
+    "NextSeq 550",
+    "NextSeq 1000",
+    "NextSeq 2000"
   ],
   "is_triplet": false,
   "__assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}",
@@ -68,9 +70,9 @@
     "SINGLE"
   ],
   "__prompts__": {
-	  "lib_kit": "Select library kit used:",
-	  "instrument": "Select sequencer used for this project:",
-	  "is_triplet": "Add RNA sequencing assay?:"
+    "lib_kit": "Select library kit used:",
+    "instrument": "Select sequencer used for this project:",
+    "is_triplet": "Add RNA sequencing assay?:"
   },
   "__output_dir": "Required variable. Do not remove."
 }
