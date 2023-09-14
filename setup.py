@@ -51,7 +51,7 @@ setup(
     long_description=readme + "\n\n" + changelog,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    name="cubi_isa_templates",
+    name="cubi-isa-templates",
     packages=["cubi_isa_templates"],
     url="https://github.com/bihealth/cubi-isa-templates",
     version=versioneer.get_version(),
