@@ -4,4 +4,4 @@ black:
 
 .PHONY: black-check
 black-check:
-	black -l 100 --check .
+	black -l 100 --exclude "versioneer.py|_version.py" --check .

@@ -156,4 +156,4 @@ _TEMPLATES = (
 #: Known ISA-tab templates.
 TEMPLATES = {tpl.name: tpl for tpl in _TEMPLATES}
 
-__version__ = _version.get_versions()['version']
+__version__ = _version.get_versions()["version"]
