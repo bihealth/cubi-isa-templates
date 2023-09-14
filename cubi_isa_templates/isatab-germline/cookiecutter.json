@@ -1,7 +1,7 @@
 {
   "investigation_title": "Investigation Title",
   "study_title": "{{cookiecutter.investigation_title}}",
-  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}|lower",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|lower}}",
   "source_names": "index,mother,father",
   "measurement_type": [
       "exome sequencing",
