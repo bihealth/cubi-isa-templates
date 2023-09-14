@@ -3,7 +3,7 @@
 
 import os.path
 
-# import versioneer
+import versioneer
 
 from setuptools import setup
 
@@ -43,6 +43,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
     description="CUBI ISA-Tab templates",
     install_requires=install_requirements,
@@ -50,9 +51,9 @@ setup(
     long_description=readme + "\n\n" + changelog,
     long_description_content_type="text/markdown",
     include_package_data=True,
-    name="cubi_isa_templates",
+    name="cubi-isa-templates",
     packages=["cubi_isa_templates"],
     url="https://github.com/bihealth/cubi-isa-templates",
-    # version=versioneer.get_version(),
-    # cmdclass=versioneer.get_cmdclass(),
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
 )
