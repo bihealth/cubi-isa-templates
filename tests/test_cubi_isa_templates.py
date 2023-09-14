@@ -6,11 +6,11 @@ from altamisa.apps import isatab_validate
 from cookiecutter.main import cookiecutter
 import pytest
 
-import cubi_isa_templates
+from cubi_isa_templates import TEMPLATES
 
 
 @pytest.mark.filterwarnings("error::altamisa.exceptions.CriticalIsaValidationWarning")
-@pytest.mark.parametrize("tpl", cubi_isa_templates.TEMPLATES.values())
+@pytest.mark.parametrize("tpl", TEMPLATES.values())
 def test_isatabs(tpl, tmp_path):
     print("Testing " + tpl.name)
     for key, value in tpl.configuration.items():
