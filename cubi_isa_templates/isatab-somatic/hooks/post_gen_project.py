@@ -3,7 +3,11 @@
 from pathlib import Path
 
 REMOVE_PATHS = [
-    "{% if not cookiecutter.is_triplet %}a_{{cookiecutter.s_file_name}}_transcriptome_profiling.txt{% endif %}",
+    (
+        "{% if not cookiecutter.is_triplet %}"
+        "a_{{cookiecutter.s_file_name}}_transcriptome_profiling.txt"
+        "{% endif %}"
+    ),
 ]
 
 for path in REMOVE_PATHS:
