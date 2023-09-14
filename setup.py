@@ -3,7 +3,7 @@
 
 import os.path
 
-# import versioneer
+import versioneer
 
 from setuptools import setup
 

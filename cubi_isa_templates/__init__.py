@@ -48,6 +48,7 @@ import attr
 import json
 import os
 import typing
+from . import _version
 
 
 #: Base directory to this file.
@@ -155,5 +156,4 @@ _TEMPLATES = (
 #: Known ISA-tab templates.
 TEMPLATES = {tpl.name: tpl for tpl in _TEMPLATES}
 
-from . import _version
 __version__ = _version.get_versions()['version']
