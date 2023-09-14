@@ -3,7 +3,7 @@
 -r requirements.txt
 
 altamisa==0.2.9
-black==23.7.0
+black==23.9.1
 cookiecutter==2.3.0
 flake8==6.1.0
 pytest-sugar==0.9.7
