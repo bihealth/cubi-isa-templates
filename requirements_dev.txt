@@ -2,7 +2,9 @@
 
 -r requirements.txt
 
-black==23.3.0
-cookiecutter>=2.1.1, <2.2
-flake8==6.0.0
+altamisa==0.2.9
+black==23.9.1
+cookiecutter==2.3.0
+flake8==6.1.0
+pytest-sugar==0.9.7
 versioneer==0.29
