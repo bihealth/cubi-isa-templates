@@ -43,6 +43,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
     description="CUBI ISA-Tab templates",
     install_requires=install_requirements,
@@ -53,6 +54,6 @@ setup(
     name="cubi_isa_templates",
     packages=["cubi_isa_templates"],
     url="https://github.com/bihealth/cubi-isa-templates",
-    # version=versioneer.get_version(),
-    # cmdclass=versioneer.get_cmdclass(),
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
 )
