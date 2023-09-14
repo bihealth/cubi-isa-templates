@@ -10,17 +10,16 @@ Available Templates
 The `Cookiecutter`_ directories are located in this module's directory.  Currently available
 templates are:
 
+- ``isatab-bulk_rnaseq``
 - ``isatab-generic``
 - ``isatab-germline``
+- ``isatab-mass_cytometry``
 - ``isatab-microarray``
 - ``isatab-ms_meta_biocrates``
 - ``isatab-single_cell_rnaseq``
+- ``isatab-somatic``
 - ``isatab-stem_cell_core_bulk``
 - ``isatab-stem_cell_core_sc``
-- ``isatab-bulk_rnaseq``
-- ``isatab-tumor_normal_dna``
-- ``isatab-tumor_normal_triplets``
-- ``isatab-mass_cytometry``
 
 Adding Templates
 ----------------
@@ -85,28 +84,16 @@ def load_variables(template_name, extra=None):
 #: Known ISA-tab templates (internal, mapping generated below).
 _TEMPLATES = (
     IsaTabTemplate(
-        name="single_cell_rnaseq",
-        path=os.path.join(_BASE_DIR, "isatab-single_cell_rnaseq"),
-        description="single cell RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-single_cell_rnaseq"),
-    ),
-    IsaTabTemplate(
         name="bulk_rnaseq",
         path=os.path.join(_BASE_DIR, "isatab-bulk_rnaseq"),
         description="bulk RNA sequencing ISA-tab template",
         configuration=load_variables("isatab-generic"),
     ),
     IsaTabTemplate(
-        name="tumor_normal_dna",
-        path=os.path.join(_BASE_DIR, "isatab-tumor_normal_dna"),
-        description="Tumor-Normal DNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-tumor_normal_dna", {"is_triplet": False}),
-    ),
-    IsaTabTemplate(
-        name="tumor_normal_triplets",
-        path=os.path.join(_BASE_DIR, "isatab-tumor_normal_triplets"),
-        description="Tumor-Normal DNA+RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-tumor_normal_triplets", {"is_triplet": True}),
+        name="generic",
+        path=os.path.join(_BASE_DIR, "isatab-generic"),
+        description="generic RNA sequencing ISA-tab template",
+        configuration=load_variables("isatab-generic"),
     ),
     IsaTabTemplate(
         name="germline",
@@ -115,10 +102,10 @@ _TEMPLATES = (
         configuration=load_variables("isatab-germline"),
     ),
     IsaTabTemplate(
-        name="generic",
-        path=os.path.join(_BASE_DIR, "isatab-generic"),
-        description="generic RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-generic"),
+        name="mass_cytometry",
+        path=os.path.join(_BASE_DIR, "isatab-mass_cytometry"),
+        description="Mass cytometry ISA-tab template",
+        configuration=load_variables("isatab-mass_cytometry"),
     ),
     IsaTabTemplate(
         name="microarray",
@@ -133,6 +120,18 @@ _TEMPLATES = (
         configuration=load_variables("isatab-ms_meta_biocrates"),
     ),
     IsaTabTemplate(
+        name="single_cell_rnaseq",
+        path=os.path.join(_BASE_DIR, "isatab-single_cell_rnaseq"),
+        description="single cell RNA sequencing ISA-tab template",
+        configuration=load_variables("isatab-single_cell_rnaseq"),
+    ),
+    IsaTabTemplate(
+        name="somatic",
+        path=os.path.join(_BASE_DIR, "isatab-somatic"),
+        description="Somatic sequencing ISA-tab template",
+        configuration=load_variables("isatab-somatic"),
+    ),
+    IsaTabTemplate(
         name="stem_cell_core_bulk",
         path=os.path.join(_BASE_DIR, "isatab-stem_cell_core_bulk"),
         description="Bulk RNA sequencing ISA-tab template from hiPSC for stem cell core projects",
@@ -144,12 +143,6 @@ _TEMPLATES = (
         description="Single cell RNA sequencing ISA-tab template from hiPSC for stem cell core "
         "projects",
         configuration=load_variables("isatab-stem_cell_core_sc"),
-    ),
-    IsaTabTemplate(
-        name="mass_cytometry",
-        path=os.path.join(_BASE_DIR, "isatab-mass_cytometry"),
-        description="Mass cytometry ISA-tab template",
-        configuration=load_variables("isatab-mass_cytometry"),
     ),
 )
 

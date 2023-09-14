@@ -14,6 +14,8 @@ from cubi_isa_templates import TEMPLATES
 def test_isatabs(tpl, tmp_path):
     print("Testing " + tpl.name)
     for key, value in tpl.configuration.items():
+        if isinstance(value, bool):
+            value = [True, False]
         if isinstance(value, list) and not key.startswith("_"):
             for choice in value:
                 extra_context = {"__output_dir": tpl.name, key: choice}
