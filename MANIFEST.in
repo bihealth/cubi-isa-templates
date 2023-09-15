@@ -1,2 +1,3 @@
 recursive-include cubi_isa_templates *
 recursive-exclude */__pycache__ *
+include requirements.txt

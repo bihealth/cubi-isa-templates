@@ -26,9 +26,6 @@ def parse_requirements(path):
 with open("README.md") as readme_file:
     readme = readme_file.read()
 
-with open("CHANGELOG.md") as changelog_file:
-    changelog = changelog_file.read()
-
 install_requirements = parse_requirements("requirements.txt")
 
 setup(
@@ -48,7 +45,7 @@ setup(
     description="CUBI ISA-Tab templates",
     install_requires=install_requirements,
     license="MIT license",
-    long_description=readme + "\n\n" + changelog,
+    long_description=readme,
     long_description_content_type="text/markdown",
     include_package_data=True,
     name="cubi-isa-templates",
@@ -56,4 +53,7 @@ setup(
     url="https://github.com/bihealth/cubi-isa-templates",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
+    project_urls={
+        "Changelog": "https://github.com/bihealth/cubi-isa-templates/blob/main/CHANGELOG.md",
+    },
 )
