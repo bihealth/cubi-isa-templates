@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1
+- Fixed code styling (#30)
+- Removed ontology URI workaroung (#31)
+
 ## v0.1.0
 
 - Set up project based on templates currently in cubi-tk
