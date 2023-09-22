@@ -3,9 +3,9 @@
 
 import os.path
 
-import versioneer
-
 from setuptools import setup
+
+import versioneer
 
 
 def parse_requirements(path):

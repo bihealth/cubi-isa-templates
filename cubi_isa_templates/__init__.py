@@ -43,12 +43,13 @@ For using these in ``cubi-tk``, see ``cubi-tk isa-tpl`` CLI documentation and
 .. _Cookiecutter: https://cookiecutter.readthedocs.io/
 """
 
-import attr
 import json
 import os
 import typing
-from . import _version
 
+import attr
+
+from . import _version
 
 #: Base directory to this file.
 _BASE_DIR = os.path.dirname(__file__)
