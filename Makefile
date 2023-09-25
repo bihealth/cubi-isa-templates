@@ -1,6 +1,6 @@
 .PHONY: black
 black:
-	black -l 100 .
+	black -l 100 --exclude "versioneer.py|_version.py" .
 
 .PHONY: black-check
 black-check:
