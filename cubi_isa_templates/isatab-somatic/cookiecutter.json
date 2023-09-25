@@ -12,12 +12,12 @@
     "Benign Neoplasm"
   ],
   "_neoplasm_terms": {
-    "Primary Neoplasm": "%23C8509",
-    "Secondary Neoplasm": "%23C36255",
-    "Recurrent Neoplasm": "%23C4798",
-    "Metastatic Neoplasm": "%23C3261",
-    "Refractory Neoplasm": "%23C7628",
-    "Benign Neoplasm": "%23C3677"
+    "Primary Neoplasm": "#C8509",
+    "Secondary Neoplasm": "#C36255",
+    "Recurrent Neoplasm": "#C4798",
+    "Metastatic Neoplasm": "#C3261",
+    "Refractory Neoplasm": "#C7628",
+    "Benign Neoplasm": "#C3677"
   },
   "measurement_type": [
     "exome sequencing",
