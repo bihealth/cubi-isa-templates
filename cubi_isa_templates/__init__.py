@@ -88,7 +88,7 @@ _TEMPLATES = (
         name="bulk_rnaseq",
         path=os.path.join(_BASE_DIR, "isatab-bulk_rnaseq"),
         description="bulk RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-generic"),
+        configuration=load_variables("isatab-bulk_rnaseq"),
     ),
     IsaTabTemplate(
         name="generic",
