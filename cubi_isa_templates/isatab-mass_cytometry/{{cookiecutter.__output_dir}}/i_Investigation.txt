@@ -66,9 +66,9 @@ Study Assay Technology Type Term Source REF	OBI
 Study Assay Technology Platform	Standard BioTools
 STUDY PROTOCOLS
 Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data processing
-Study Protocol Type	sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data processing
-Study Protocol Type Term Accession Number	""	""	""	""	""	""
-Study Protocol Type Term Source REF	""	""	""	""	""	""
+Study Protocol Type	material sampling process	Dissociation	Multiplexing	Antibody staining	mass cytometry assay	data transformation
+Study Protocol Type Term Accession Number	"http://purl.obolibrary.org/obo/OBI_0000744"	""	""	""	"http://purl.obolibrary.org/obo/OBI_0002115"	"http://purl.obolibrary.org/obo/OBI_0200000"
+Study Protocol Type Term Source REF	"OBI"	""	""	""	"OBI"	"OBI"
 Study Protocol Description	""	""	""	""	"Data acquisition"	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
