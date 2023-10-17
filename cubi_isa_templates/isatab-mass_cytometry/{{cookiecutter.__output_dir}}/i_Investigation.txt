@@ -65,20 +65,20 @@ Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo
 Study Assay Technology Type Term Source REF	OBI
 Study Assay Technology Platform	Standard BioTools
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Data processing
-Study Protocol Type	sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data normalization	Data processing
-Study Protocol Type Term Accession Number	""	""	""	""	""	""	""
-Study Protocol Type Term Source REF	""	""	""	""	""	""	""
-Study Protocol Description	""	""	""	""	"Data acquisition"	"Bead standard normalization"	"De-multiplexing & quality gating"
-Study Protocol URI	""	""	""	""	""	""	""
-Study Protocol Version	""	""	""	""	""	""	""
-Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired	Method	
-Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";"	""	""
-Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";"	""	""
-Study Protocol Components Name	""	""	""	""	""	""	""
-Study Protocol Components Type	""	""	""	""	""	""	""
-Study Protocol Components Type Term Accession Number	""	""	""	""	""	""	""
-Study Protocol Components Type Term Source REF	""	""	""	""	""	""	""
+Study Protocol Name	Sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data processing
+Study Protocol Type	sample collection	Dissociation	Multiplexing	Antibody staining	Mass cytometry	Data processing
+Study Protocol Type Term Accession Number	""	""	""	""	""	""
+Study Protocol Type Term Source REF	""	""	""	""	""	""
+Study Protocol Description	""	""	""	""	"Data acquisition"	"De-multiplexing & quality gating"
+Study Protocol URI	""	""	""	""	""	""
+Study Protocol Version	""	""	""	""	""	""
+Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired;Normalization Passport	
+Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";;"	""
+Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";;"	""
+Study Protocol Components Name	""	""	""	""	""	""
+Study Protocol Components Type	""	""	""	""	""	""
+Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
+Study Protocol Components Type Term Source REF	""	""	""	""	""	""
 STUDY CONTACTS
 Study Person Last Name
 Study Person First Name
