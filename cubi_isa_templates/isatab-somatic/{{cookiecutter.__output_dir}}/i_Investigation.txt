@@ -60,7 +60,7 @@ Study Factor Type Term Source REF
 STUDY ASSAYS
 Study Assay File Name	a_{{cookiecutter.s_file_name}}_{{cookiecutter.__assay_name}}.txt{% if cookiecutter.is_triplet == True %}	a_{{cookiecutter.s_file_name}}_transcriptome_profiling.txt{% endif %}
 Study Assay Measurement Type	{{cookiecutter.measurement_type}}{% if cookiecutter.is_triplet == True %}	transcriptome profiling{% endif %}
-Study Assay Measurement Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0002118{% if cookiecutter.is_triplet == True %}	http://purl.obolibrary.org/obo/OBI_0000424{% endif %}
+Study Assay Measurement Type Term Accession Number	{{cookiecutter._measurement_type_terms[cookiecutter.measurement_type]}}{% if cookiecutter.is_triplet == True %}	http://purl.obolibrary.org/obo/OBI_0000424{% endif %}
 Study Assay Measurement Type Term Source REF	OBI{% if cookiecutter.is_triplet == True %}	OBI{% endif %}
 Study Assay Technology Type	nucleotide sequencing{% if cookiecutter.is_triplet == True %}	nucleotide sequencing{% endif %}
 Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000626{% if cookiecutter.is_triplet == True %}	http://purl.obolibrary.org/obo/OBI_0000626{% endif %}
