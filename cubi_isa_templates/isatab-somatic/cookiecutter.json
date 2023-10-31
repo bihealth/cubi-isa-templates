@@ -23,6 +23,10 @@
     "exome sequencing",
     "genome sequencing"
   ],
+  "_measurement_type_terms": {
+    "exome sequencing": "http://purl.obolibrary.org/obo/OBI_0002118",
+	"genome sequencing": "http://purl.obolibrary.org/obo/OBI_0002117"
+  },
   "lib_kit": [
     "Agilent SureSelect Human All Exon V8",
     "Agilent SureSelect Human All Exon V7",
