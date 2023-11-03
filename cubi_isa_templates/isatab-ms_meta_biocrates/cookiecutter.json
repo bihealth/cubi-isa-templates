@@ -21,21 +21,6 @@
       "taxon": "10090"
     }
   },
-  
-  "assay_measurement_type": [
-    "metabolite profiling"
-  ],
-  "assay_technology_type": [
-    "mass spectrometry"
-  ],
-  "_technology_types": {
-    "mass spectrometry": {
-      "term": "mass spectrometry",
-      "source": "OBI",
-      "accession": "http://purl.obolibrary.org/obo/OBI_0000470"
-    }
-  },
-  
   "biocrates_kit": [
     "Biocrates MxP Quant 500 Kit",
     "Biocrates AbsoluteIDQ p400 HR Kit"
