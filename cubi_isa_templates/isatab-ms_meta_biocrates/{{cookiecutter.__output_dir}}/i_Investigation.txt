@@ -67,20 +67,20 @@ Study Assay Technology Type Term Accession Number	{{cookiecutter._technology_typ
 Study Assay Technology Type Term Source REF	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}
 Study Assay Technology Platform	{{cookiecutter.biocrates_kit}}	{{cookiecutter.biocrates_kit}}
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Extraction {{cookiecutter.assay_measurement_abbreviation_LC}}	Labeling {{cookiecutter.assay_measurement_abbreviation_LC}}	Chromatography {{cookiecutter.assay_measurement_abbreviation_LC}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_LC}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_LC}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_LC}}	Extraction {{cookiecutter.assay_measurement_abbreviation_FIA}}	Labeling {{cookiecutter.assay_measurement_abbreviation_FIA}}	Flow Injection Analysis {{cookiecutter.assay_measurement_abbreviation_FIA}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_FIA}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_FIA}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_FIA}}
-Study Protocol Type	Sample collection	Extraction {{cookiecutter.assay_measurement_abbreviation_LC}}	Labeling {{cookiecutter.assay_measurement_abbreviation_LC}}	Chromatography {{cookiecutter.assay_measurement_abbreviation_LC}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_LC}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_LC}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_LC}}	Extraction {{cookiecutter.assay_measurement_abbreviation_FIA}}	Labeling {{cookiecutter.assay_measurement_abbreviation_FIA}}	Flow Injection Analysis {{cookiecutter.assay_measurement_abbreviation_FIA}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_FIA}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_FIA}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_FIA}}
-Study Protocol Type Term Accession Number													
-Study Protocol Type Term Source REF													
-Study Protocol Description													
-Study Protocol URI													
-Study Protocol Version													
-Study Protocol Parameters Name		Phase;Derivatization;Post extraction		Column type;Chromatography instrument;Column model	Scan polarity;Mass analyzer;Detector;Aquisition software name;Ion source;Aquisition mode;Instrument;Aquisition parameter;Aquisition software version;Scan m/z range	Analysis software name;Analysis software version	Report file;Software name;Software version	Phase;Derivatization;Post extraction			Scan polarity;Mass analyzer;Detector;Aquisition software name;Ion source;Aquisition mode;Instrument;Aquisition parameter;Aquisition software version;Scan m/z range	Analysis software name;Analysis software version	Report file;Software name;Software version
-Study Protocol Parameters Name Term Accession Number		;;		;;	;;;;;;;;;	;	;;	;;			;;;;;;;;;	;	;;
-Study Protocol Parameters Name Term Source REF		;;		;;	;;;;;;;;;	;	;;	;;			;;;;;;;;;	;	;;
-Study Protocol Components Name													
-Study Protocol Components Type													
-Study Protocol Components Type Term Accession Number													
-Study Protocol Components Type Term Source REF													
+Study Protocol Name	Sample collection	Extraction	Labeling	Chromatography	Mass spectrometry	Data transformation	Quality Control	Flow Injection Analysis
+Study Protocol Type	Sample collection	Extraction	Labeling	Chromatography	Mass spectrometry	Data transformation	Quality Control	Flow Injection Analysis
+Study Protocol Type Term Accession Number								
+Study Protocol Type Term Source REF								
+Study Protocol Description								
+Study Protocol URI								
+Study Protocol Version								
+Study Protocol Parameters Name		Phase;Derivatization;Post extraction		Column type;Chromatography instrument;Column model	Scan polarity;Mass analyzer;Detector;Aquisition software name;Ion source;Aquisition mode;Instrument;Aquisition parameter;Aquisition software version;Scan m/z range	Analysis software name;Analysis software version	Report file;Software name;Software version	
+Study Protocol Parameters Name Term Accession Number		;;		;;	;;;;;;;;;	;	;;	
+Study Protocol Parameters Name Term Source REF		;;		;;	;;;;;;;;;	;	;;	
+Study Protocol Components Name								
+Study Protocol Components Type								
+Study Protocol Components Type Term Accession Number								
+Study Protocol Components Type Term Source REF								
 STUDY CONTACTS
 Study Person Last Name
 Study Person First Name
