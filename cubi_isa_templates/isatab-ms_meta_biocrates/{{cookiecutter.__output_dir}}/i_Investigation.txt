@@ -9,8 +9,6 @@ Investigation Title	{{cookiecutter.investigation_title}}
 Investigation Description	""
 Investigation Submission Date	""
 Investigation Public Release Date	""
-Comment[Created With Configuration]	/path/to/isa-configurations/bih_studies/bih_ms_meta_biocrates
-Comment[Last Opened With Configuration]	bih_ms_meta_biocrates
 INVESTIGATION PUBLICATIONS
 Investigation PubMed ID
 Investigation Publication DOI
