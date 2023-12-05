@@ -56,14 +56,14 @@ Study Factor Type
 Study Factor Type Term Accession Number
 Study Factor Type Term Source REF
 STUDY ASSAYS
-Study Assay File Name	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}_LC.txt	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}_FIA.txt
+Study Assay File Name	a_{{cookiecutter.assay_prefix}}_LC.txt	a_{{cookiecutter.assay_prefix}}_FIA.txt
 Study Assay Measurement Type	metabolite profiling	metabolite profiling
 Study Assay Measurement Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000366	http://purl.obolibrary.org/obo/OBI_0000366
 Study Assay Measurement Type Term Source REF	OBI	OBI
 Study Assay Technology Type	mass spectrometry	mass spectrometry
 Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000470	http://purl.obolibrary.org/obo/OBI_0000470
 Study Assay Technology Type Term Source REF	OBI	OBI
-Study Assay Technology Platform	{{cookiecutter.biocrates_kit}}	{{cookiecutter.biocrates_kit}}
+Study Assay Technology Platform	Biocrates	Biocrates
 STUDY PROTOCOLS
 Study Protocol Name	Sample collection	Extraction	Labeling	Chromatography	Mass spectrometry	Data transformation	Quality Control	Injection
 Study Protocol Type	Sample collection	Extraction	Labeling	liquid chromatography separation	Mass spectrometry assay	Data transformation	Quality Control	Flow Injection Analysis

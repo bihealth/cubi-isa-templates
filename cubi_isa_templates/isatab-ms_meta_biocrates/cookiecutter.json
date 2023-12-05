@@ -22,12 +22,11 @@
     }
   },
   "biocrates_kit": [
-    "Biocrates MxP Quant 500 Kit",
-    "Biocrates AbsoluteIDQ p400 HR Kit"
+    "Biocrates MxP Quant 500",
+    "Biocrates AbsoluteIDQ p400 HR"
   ],
 
   "assay_prefix": "{{cookiecutter.study_id}}",
-  "assay_name": "{{cookiecutter.biocrates_kit|replace(' ', '_')}}",
   "assay_measurement_abbreviation_LC": "B-LC",
   "assay_measurement_abbreviation_FIA": "B-FIA",
 
