@@ -1,16 +1,14 @@
 ONTOLOGY SOURCE REFERENCE
-Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	CL	MS
-Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/CL	http://data.bioontology.org/ontologies/MS
-Term Source Version	48	35	10	12	570	2.8	2019-08-12	122
-Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology	Cell Ontology	Mass Spectrometry Ontology
+Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	CL	MS
+Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/CL	http://data.bioontology.org/ontologies/MS
+Term Source Version	220	52	22	24	605	109	221
+Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Cell Ontology	Mass Spectrometry Ontology
 INVESTIGATION
 Investigation Identifier	""
 Investigation Title	{{cookiecutter.investigation_title}}
 Investigation Description	""
 Investigation Submission Date	""
 Investigation Public Release Date	""
-Comment[Created With Configuration]	/path/to/isa-configurations/bih_studies/bih_ms_meta_biocrates
-Comment[Last Opened With Configuration]	bih_ms_meta_biocrates
 INVESTIGATION PUBLICATIONS
 Investigation PubMed ID
 Investigation Publication DOI
@@ -58,29 +56,29 @@ Study Factor Type
 Study Factor Type Term Accession Number
 Study Factor Type Term Source REF
 STUDY ASSAYS
-Study Assay File Name	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}_LC.txt	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}_FIA.txt
-Study Assay Measurement Type	{{cookiecutter.assay_measurement_type}}	{{cookiecutter.assay_measurement_type}}
-Study Assay Measurement Type Term Accession Number	""	""
-Study Assay Measurement Type Term Source REF	""	""
-Study Assay Technology Type	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].term}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].term}}
-Study Assay Technology Type Term Accession Number	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].accession}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].accession}}
-Study Assay Technology Type Term Source REF	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}	{{cookiecutter._technology_types[cookiecutter.assay_technology_type].source}}
-Study Assay Technology Platform	{{cookiecutter.biocrates_kit}}	{{cookiecutter.biocrates_kit}}
+Study Assay File Name	a_{{cookiecutter.assay_prefix}}_LC.txt	a_{{cookiecutter.assay_prefix}}_FIA.txt
+Study Assay Measurement Type	metabolite profiling	metabolite profiling
+Study Assay Measurement Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000366	http://purl.obolibrary.org/obo/OBI_0000366
+Study Assay Measurement Type Term Source REF	OBI	OBI
+Study Assay Technology Type	mass spectrometry	mass spectrometry
+Study Assay Technology Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000470	http://purl.obolibrary.org/obo/OBI_0000470
+Study Assay Technology Type Term Source REF	OBI	OBI
+Study Assay Technology Platform	Biocrates	Biocrates
 STUDY PROTOCOLS
-Study Protocol Name	Sample collection	Extraction {{cookiecutter.assay_measurement_abbreviation_LC}}	Labeling {{cookiecutter.assay_measurement_abbreviation_LC}}	Chromatography {{cookiecutter.assay_measurement_abbreviation_LC}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_LC}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_LC}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_LC}}	Extraction {{cookiecutter.assay_measurement_abbreviation_FIA}}	Labeling {{cookiecutter.assay_measurement_abbreviation_FIA}}	Flow Injection Analysis {{cookiecutter.assay_measurement_abbreviation_FIA}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_FIA}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_FIA}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_FIA}}
-Study Protocol Type	Sample collection	Extraction {{cookiecutter.assay_measurement_abbreviation_LC}}	Labeling {{cookiecutter.assay_measurement_abbreviation_LC}}	Chromatography {{cookiecutter.assay_measurement_abbreviation_LC}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_LC}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_LC}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_LC}}	Extraction {{cookiecutter.assay_measurement_abbreviation_FIA}}	Labeling {{cookiecutter.assay_measurement_abbreviation_FIA}}	Flow Injection Analysis {{cookiecutter.assay_measurement_abbreviation_FIA}}	Mass spectrometry {{cookiecutter.assay_measurement_abbreviation_FIA}}	Data transformation {{cookiecutter.assay_measurement_abbreviation_FIA}}	Quality Control {{cookiecutter.assay_measurement_abbreviation_FIA}}
-Study Protocol Type Term Accession Number													
-Study Protocol Type Term Source REF													
-Study Protocol Description													
-Study Protocol URI													
-Study Protocol Version													
-Study Protocol Parameters Name		Phase;Derivatization;Post extraction		Column type;Chromatography instrument;Column model	Scan polarity;Mass analyzer;Detector;Aquisition software name;Ion source;Aquisition mode;Instrument;Aquisition parameter;Aquisition software version;Scan m/z range	Analysis software name;Analysis software version	Report file;Software name;Software version	Phase;Derivatization;Post extraction			Scan polarity;Mass analyzer;Detector;Aquisition software name;Ion source;Aquisition mode;Instrument;Aquisition parameter;Aquisition software version;Scan m/z range	Analysis software name;Analysis software version	Report file;Software name;Software version
-Study Protocol Parameters Name Term Accession Number		;;		;;	;;;;;;;;;	;	;;	;;			;;;;;;;;;	;	;;
-Study Protocol Parameters Name Term Source REF		;;		;;	;;;;;;;;;	;	;;	;;			;;;;;;;;;	;	;;
-Study Protocol Components Name													
-Study Protocol Components Type													
-Study Protocol Components Type Term Accession Number													
-Study Protocol Components Type Term Source REF													
+Study Protocol Name	Sample collection	Extraction	Labeling	Chromatography	Mass spectrometry	Data transformation	Quality Control	Injection
+Study Protocol Type	Sample collection	Extraction	Labeling	liquid chromatography separation	Mass spectrometry assay	Data transformation	Quality Control	Flow Injection Analysis
+Study Protocol Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0000744	http://purl.obolibrary.org/obo/OBI_0302884		http://purl.obolibrary.org/obo/MS_1002271	http://purl.obolibrary.org/obo/OBI_0000470	http://purl.obolibrary.org/obo/OBI_0200000		http://purl.obolibrary.org/obo/MS_1000058
+Study Protocol Type Term Source REF	OBI	MS		MS	OBI	MS		MS
+Study Protocol Description								
+Study Protocol URI								
+Study Protocol Version								
+Study Protocol Parameters Name		Phase;Derivatization;Kit name;Kit lot no.		Extract dilution;Extract dilution solution;Chromatography instrument;Column type;Column model;Column lot no.;Running solutions;Flow rate;Cleaning solutions	Scan polarity;Scan m/z range;Instrument model;Ionization type;Mass analyzer type;Detector type;Acquisition mode;Acquisition software;Acquisition software version	Analysis software;Analysis software version	Software name;Software version	Extract dilution;Extract dilution solution;Injection instrument;Injection volume;Flow rate;Cleaning solution
+Study Protocol Parameters Name Term Accession Number		;;;		;;http://purl.obolibrary.org/obo/OBI_0000485;;;;;http://purl.obolibrary.org/obo/PATO_0002243;	http://purl.obolibrary.org/obo/MS_1000465;;http://purl.obolibrary.org/obo/MS_1000031;http://purl.obolibrary.org/obo/MS_1000008;http://purl.obolibrary.org/obo/MS_1000443;http://purl.obolibrary.org/obo/MS_1000026;;http://purl.obolibrary.org/obo/MS_1001455;	http://purl.obolibrary.org/obo/MS_1001456;	;	;;;;http://purl.obolibrary.org/obo/PATO_0002243;
+Study Protocol Parameters Name Term Source REF		;;;		;;OBI;;;;;MS;	MS;;MS;MS;MS;MS;;MS;	MS;	;	;;;;MS;
+Study Protocol Components Name								
+Study Protocol Components Type								
+Study Protocol Components Type Term Accession Number								
+Study Protocol Components Type Term Source REF								
 STUDY CONTACTS
 Study Person Last Name
 Study Person First Name
