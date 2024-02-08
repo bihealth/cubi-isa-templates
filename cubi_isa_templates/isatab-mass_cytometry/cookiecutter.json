@@ -38,7 +38,7 @@
   "sample_factor_types": "intracellular structure,chemical compound,time span",
   "dissociation_type": ["No", "pre-fix Trypsin", "post-fix Trypsin", "post-fix Octo"],
   "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
-  "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')}}",
+  "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')|replace('/', '_')}}",
   "__assay_prefix": "{{cookiecutter.__s_file_name}}",
   "__output_dir": "Required variable. Do not remove.",
   "__prompts__": {

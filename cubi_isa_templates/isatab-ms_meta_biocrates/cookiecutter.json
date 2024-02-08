@@ -2,11 +2,11 @@
   "investigation_title": "Investigation Title",
 
   "study_title": "{{cookiecutter.investigation_title}}",
-  "study_id": "{{cookiecutter.study_title|lower|replace(' ', '_')}}",
+  "study_id": "{{cookiecutter.study_title|lower|replace(' ', '_')|replace('/', '_')}}",
   "study_file_name": "{{cookiecutter.study_id}}",
 
   "sample_names": "alpha,beta,gamma",
-  
+
   "organism": [
     "Homo sapiens",
     "Mus musculus"
@@ -21,7 +21,7 @@
       "taxon": "10090"
     }
   },
-  
+
   "assay_measurement_type": [
     "metabolite profiling"
   ],
@@ -35,7 +35,7 @@
       "accession": "http://purl.obolibrary.org/obo/OBI_0000470"
     }
   },
-  
+
   "biocrates_kit": [
     "Biocrates MxP Quant 500 Kit",
     "Biocrates AbsoluteIDQ p400 HR Kit"
