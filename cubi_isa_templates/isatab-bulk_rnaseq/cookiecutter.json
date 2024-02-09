@@ -9,7 +9,7 @@
   "center_contact": "",
 
   "study_title": "{{cookiecutter.investigation_title}}",
-  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|replace('/', '_')}}",
   "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
   "a_technology_type": "nucleotide sequencing",
   "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
