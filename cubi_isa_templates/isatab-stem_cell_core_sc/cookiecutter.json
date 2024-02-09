@@ -33,7 +33,7 @@
   "sample_multiplexing": ["No", "CellPlex", "TotalSeq", "Other"],
   "genotype_multiplexing": ["no", "yes"],
   "s_file_name": "{{cookiecutter.study_title|replace(' ', '_')|replace('/', '-')}}",
-  "assay_prefix": "{{s_file_name}}",
+  "assay_prefix": "{{cookiecutter.s_file_name}}",
   "assay_name": "{{cookiecutter.library_type}}_{{cookiecutter.a_measurement_type|replace(' ', '_')}}",
   "__output_dir": "Required variable. Do not remove."
 }
