@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.2
+- Fixed bulk_rnaseq template using wrong wrong configuration (#33)
+- Fixed parameter inconsistency with Fastq prefix
+- Fixed file name slash sanitization (#37) (#38)
+
 ## v0.1.1
 - Fixed code styling (#30)
 - Removed ontology URI workaroung (#31)
