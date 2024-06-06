@@ -1,0 +1,8 @@
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_suffixes = cookiecutter.sample_suffixes.split(",") -%}
+Sample Name	Protocol REF	Performer	Date	Extract Name	Characteristics[Position]	Characteristics[Sample Plate ID]	Protocol REF	Assay Name	Parameter Value[Panel Name]	Comment[Panel Catalogue No.]	Parameter Value[Panel Data File No.]	Parameter Value[Probe Kit Lot No.]	Parameter Value[Detection & Controls Lot No.]	Parameter Value[Primer plate Lot No.]	Parameter Value[PCR Instrument]	Parameter Value[Priming Instrument]	Parameter Value[Measuring Instrument]	Parameter Value[Chip ID]	Parameter Value[Aquisition software name]	Parameter Value[Aquisition software version]	Performer	Date	Raw Data File	Protocol REF	Parameter Value[Primary analysis software name]	Parameter Value[Primary analysis software version]	Performer	Date	Derived Data File	Protocol REF	Parameter Value[Secondary analysis software name]	Parameter Value[Secondary analysis software version]	Parameter Value[Normalization Method]	Parameter Value[Intra-plate coefficient of variation]	Parameter Value[Inter-plate coefficient of variation]	Parameter Value[Detected Proteins]	Parameter Value[Passing QC]	Parameter Value[QC Deviation from median Inc Ctrl 2]	Parameter Value[QC Deviation from median Det Ctrl]	Comment[Standardized analysis report]	Comment[Report file]	Comment[Performer report]	Performer	Date	Derived Data File
+{%+ for source_name in source_names -%}
+{%+ for sample_suffix in sample_suffixes -%}
+{{source_name|replace("-", "_")}}_{{sample_suffix|replace("-", "_")}}	Sample Aliquoting						Olink assay																	Primary data analysis						Secondary data analysis															
+{% endfor -%}
+{% endfor -%}
