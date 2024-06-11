@@ -1,5 +1,5 @@
-{% set source_names = cookiecutter.source_names.split(",") -%}
-{% set sample_suffixes = cookiecutter.sample_suffixes.split(",") -%}
+{% set source_names = cookiecutter._source_names.split(",") -%}
+{% set sample_suffixes = cookiecutter._sample_suffixes.split(",") -%}
 Sample Name{% if cookiecutter.dissociation_type != "No" %}	Protocol REF	Parameter Value[Dissociation method]	Performer	Date{% endif %}{% if cookiecutter.sample_multiplexing != "No" %}	Protocol REF	Parameter Value[Multiplexing method]	Parameter Value[Barcode ID]	Parameter Value[Barcode key]	Comment[Report file]	Performer	Date{% endif %}	Protocol REF	Parameter Value[Antibody panel]	Comment[Report file]	Performer	Date	Protocol REF	Assay Name	Parameter Value[Cell count pre acquisition]	Parameter Value[Cells acquired]	Parameter Value[Normalization Passport]	Comment[Report file]	Performer	Date	Derived Data File	Protocol REF	Comment[Report file]	Performer	Date	Derived Data File
 {%+ for source_name in source_names -%}
 {%+ for sample_suffix in sample_suffixes -%}
