@@ -77,9 +77,9 @@ Study Protocol Type Term Source REF	"OBI"	""	""	""	"OBI"	"OBI"
 Study Protocol Description	""	""	""	""	"Data acquisition"	"De-multiplexing & quality gating"
 Study Protocol URI	""	""	""	""	""	""
 Study Protocol Version	""	""	""	""	""	""
-Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired;Normalization Passport	
-Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";;"	""
-Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";;"	""
+Study Protocol Parameters Name	Method	Dissociation method	Multiplexing method;Barcode ID;Barcode key	Antibody panel	Cell count pre acquisition;Cells acquired	
+Study Protocol Parameters Name Term Accession Number	""	""	";;"	""	";"	""
+Study Protocol Parameters Name Term Source REF	""	""	";;"	""	";"	""
 Study Protocol Components Name	""	""	""	""	""	""
 Study Protocol Components Type	""	""	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""	""	""
