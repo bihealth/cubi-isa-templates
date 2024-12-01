@@ -1,0 +1,34 @@
+{
+  "investigation_identifier": "Investigation_ID",
+  "investigation_title": "Investigation Title",
+  "investigation_description": "",
+  "source_names": "source1,source2",
+  "organism": [
+    "Homo sapiens",
+    "Mus musculus",
+    "Other"
+  ],
+  "_organism_taxon": {
+      "Homo sapiens": "9606",
+      "Mus musculus": "10090"
+  },
+  "source_characteristics": "Origin,Passage",
+  "sample_suffixes": "sample1,sample2",
+  "sample_characteristics": "Frozen",
+  "sample_factors": "Treatment target,Treatment substance,Treatment time",
+  "sample_factor_types": "intracellular structure,chemical compound,time span",
+  "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')|replace('/', '_')}}",
+  "__assay_prefix": "{{cookiecutter.__s_file_name}}",
+  "__output_dir": "Required variable. Do not remove.",
+  "__prompts__": {
+    "investigation_identifier": "Short project title or acronym",
+    "investigation_title": "Longer project title",
+    "investigation_description": "Description of project (optional)",
+    "source_names": "Patient IDs, cell lines, model systems, etc.",
+    "source_characteristics": "Additional source characteristics as comma-separated list",
+    "sample_suffixes": "List of suffixes to create unique sample IDs from source names",
+    "sample_factors": "Sample factors as comma-separated list",
+    "sample_factor_types": "Sample factor types as comma-separated list (same length as factors)",
+    "sample_characteristics": "Sample characteristics as comma-separated list"
+  }
+}

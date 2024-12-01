@@ -16,6 +16,7 @@ templates are:
 - ``isatab-mass_cytometry``
 - ``isatab-microarray``
 - ``isatab-ms_meta_biocrates``
+- ``isatab-olink``
 - ``isatab-single_cell_rnaseq``
 - ``isatab-somatic``
 - ``isatab-stem_cell_core_bulk``
@@ -119,6 +120,12 @@ _TEMPLATES = (
         path=os.path.join(_BASE_DIR, "isatab-ms_meta_biocrates"),
         description="MS Metabolomics Biocrates kit ISA-tab template",
         configuration=load_variables("isatab-ms_meta_biocrates"),
+    ),
+    IsaTabTemplate(
+        name="olink",
+        path=os.path.join(_BASE_DIR, "isatab-olink"),
+        description="Olink Proteomics ISA-tab template",
+        configuration=load_variables("isatab-olink"),
     ),
     IsaTabTemplate(
         name="single_cell_rnaseq",

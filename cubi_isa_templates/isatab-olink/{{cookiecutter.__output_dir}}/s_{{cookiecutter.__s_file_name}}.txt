@@ -1,0 +1,11 @@
+{% set source_characteristics = cookiecutter.source_characteristics.split(",") -%}
+{% set source_names = cookiecutter.source_names.split(",") -%}
+{% set sample_suffixes = cookiecutter.sample_suffixes.split(",") -%}
+{% set sample_characteristics = cookiecutter.sample_characteristics.split(",") -%}
+{% set sample_factors = cookiecutter.sample_factors.split(",") -%}
+Source Name{%+ for characteristic in source_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}	Protocol REF	Parameter Value[Method]	Performer	Date	Sample Name{%+ for characteristic in sample_characteristics %}	Characteristics[{{characteristic}}]{% endfor %}{%+ for factor in sample_factors %}	Factor Value[{{factor}}]{% endfor %}
+{%+ for source_name in source_names -%}
+{%+ for sample_suffix in sample_suffixes -%}
+{{source_name|replace("-", "_")}}{%+ for characteristic in source_characteristics %}	{% endfor %}	Sample collection				{{source_name|replace("-", "_")}}_{{sample_suffix|replace("-", "_")}}{%+ for characteristic in sample_characteristics %}	{% endfor %}{%+ for factor in sample_factors %}	{% endfor %}
+{% endfor -%}
+{% endfor -%}
