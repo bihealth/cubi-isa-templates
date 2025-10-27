@@ -1,0 +1,122 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	GHGA	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	DUO	HANCESTRO	NCIT	BTO	ICD10
+Term Source File	https://ghga.de/ontology	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/DUO	http://data.bioontology.org/ontologies/HANCESTRO	http://data.bioontology.org/ontologies/NCIT	http://data.bioontology.org/ontologies/BTO	https://www.who.int/classifications/icd/icdonlineversions/en/
+Term Source Version	1.0	48	35	10	12	570	2.8	1.0	1.0	21.05d	1.1.3	2019
+Term Source Description	GHGA Metadata Schema Ontology	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology	Data Use Ontology	Human Ancestry Ontology	National Cancer Institute Thesaurus	BRENDA Tissue Ontology	International Classification of Diseases
+INVESTIGATION
+Investigation Identifier	{{cookiecutter.investigation_identifier}}
+Investigation Title	{{cookiecutter.investigation_title}}
+Investigation Description	{{cookiecutter.investigation_description}}
+Investigation Submission Date	{{cookiecutter.investigation_submission_date}}
+Investigation Public Release Date	{{cookiecutter.investigation_public_release_date}}
+Comment[Created With Configuration]	ghga_single_cell
+Comment[Last Opened With Configuration]	ghga_single_cell
+Comment[GHGA Data Access Policy Name]	{{cookiecutter.data_access_policy_name}}
+Comment[GHGA Data Access Policy Description]	{{cookiecutter.data_access_policy_description}}
+Comment[GHGA Data Access Policy Text]	{{cookiecutter.data_access_policy_text}}
+Comment[GHGA Data Access Policy URL]	{{cookiecutter.data_access_policy_url}}
+Comment[GHGA Data Use Permission Term]	{{cookiecutter.data_use_permission_term}}
+Comment[GHGA Data Use Permission ID]	{{cookiecutter.data_use_permission_id}}
+Comment[GHGA Data Use Modifier Terms]	{{cookiecutter.data_use_modifier_terms}}
+Comment[GHGA Data Use Modifier IDs]	{{cookiecutter.data_use_modifier_ids}}
+Comment[GHGA Data Access Policy EGA Accession]	{{cookiecutter.data_access_policy_ega_accession}}
+Comment[GHGA Data Access Committee Reference]	{{cookiecutter.data_access_committee_ref}}
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID	
+Investigation Publication DOI	
+Investigation Publication Author List	
+Investigation Publication Title	
+Investigation Publication Status	
+Investigation Publication Status Term Accession Number	
+Investigation Publication Status Term Source REF	
+INVESTIGATION CONTACTS
+Investigation Person Last Name	
+Investigation Person First Name	
+Investigation Person Mid Initials	
+Investigation Person Email	
+Investigation Person Phone	
+Investigation Person Fax	
+Investigation Person Address	
+Investigation Person Affiliation	
+Investigation Person Roles	
+Investigation Person Roles Term Accession Number	
+Investigation Person Roles Term Source REF	
+Comment[GHGA Data Access Committee Email]	{{cookiecutter.data_access_committee_email}}
+Comment[GHGA Data Access Committee Institute]	{{cookiecutter.data_access_committee_institute}}
+Comment[GHGA Data Access Committee EGA Accession]	{{cookiecutter.data_access_committee_ega_accession}}
+STUDY
+Study Identifier	{{cookiecutter.s_file_name}}
+Study Title	{{cookiecutter.investigation_title}}
+Study Description	{{cookiecutter.study_description}}
+Comment[Study Grant Number]	""
+Comment[Study Funding Agency]	""
+Study Submission Date	{{cookiecutter.investigation_submission_date}}
+Study Public Release Date	{{cookiecutter.investigation_public_release_date}}
+Study File Name	s_{{cookiecutter.s_file_name}}.txt
+Comment[GHGA Study Types]	{{cookiecutter.study_types}}
+Comment[GHGA Study EGA Accession]	{{cookiecutter.study_ega_accession}}
+Comment[GHGA Study Affiliations]	{{cookiecutter.study_affiliations}}
+Comment[GHGA Study Attributes]	{{cookiecutter.study_attributes}}
+Comment[GHGA Study Has Study Files]	{{cookiecutter.study_has_study_files}}
+Comment[GHGA Study Has Data Files]	{{cookiecutter.study_has_data_files}}
+STUDY DESIGN DESCRIPTORS
+Study Design Type	single cell RNA sequencing design
+Study Design Type Term Accession Number	http://purl.obolibrary.org/obo/OBI_0003015
+Study Design Type Term Source REF	OBI
+STUDY PUBLICATIONS
+Study PubMed ID	
+Study Publication DOI	{{cookiecutter.publication_doi}}
+Study Publication Author List	{{cookiecutter.publication_author}}
+Study Publication Title	{{cookiecutter.publication_title}}
+Study Publication Status	published
+Study Publication Status Term Accession Number	
+Study Publication Status Term Source REF	
+Comment[GHGA Publication Abstract]	{{cookiecutter.publication_abstract}}
+Comment[GHGA Publication Year]	{{cookiecutter.publication_year}}
+Comment[GHGA Publication Journal]	{{cookiecutter.publication_journal}}
+Comment[GHGA Publication External References]	{{cookiecutter.publication_xref}}
+STUDY FACTORS
+Study Factor Name	
+Study Factor Type	
+Study Factor Type Term Accession Number	
+Study Factor Type Term Source REF	
+STUDY ASSAYS
+Comment[SODAR Assay Plugin]	samplesheets_assay_generic
+Comment[SODAR Assay Link Row]	Raw modality 1 files;Raw modality 2 files;Raw modality 3 files;Whole pool processed files
+Comment[SODAR Assay Row Path 1]	Pool ID
+Comment[SODAR Assay Row Path 2]	Sample ID
+Study Assay File Name	a_{{cookiecutter.assay_prefix}}_{{cookiecutter.assay_name}}.txt
+Study Assay Measurement Type	{{cookiecutter.a_measurement_type}}
+Study Assay Measurement Type Term Accession Number	{{cookiecutter._measurement_types[cookiecutter.a_measurement_type].accession}}
+Study Assay Measurement Type Term Source REF	{{cookiecutter._measurement_types[cookiecutter.a_measurement_type].source}}
+Study Assay Technology Type	{{cookiecutter.a_technology_type}}
+Study Assay Technology Type Term Accession Number	{{cookiecutter._technology_types[cookiecutter.a_technology_type].accession}}
+Study Assay Technology Type Term Source REF	{{cookiecutter._technology_types[cookiecutter.a_technology_type].source}}
+Study Assay Technology Platform	{{cookiecutter.instrument}}
+STUDY PROTOCOLS
+Study Protocol Name	Sample collection	Dissociation scRNAseq	Library construction scRNAseq	Nucleic acid sequencing scRNAseq
+Study Protocol Type	Sample collection	Dissociation scRNAseq	Library construction scRNAseq	Nucleic acid sequencing scRNAseq
+Study Protocol Type Term Accession Number				
+Study Protocol Type Term Source REF				
+Study Protocol Description				
+Study Protocol URI				
+Study Protocol Version				
+Study Protocol Parameters Name	Method	Dissociation method;Cell count;Removal debris;Removal dead cell;Removal ab cell;Cell fixation;Cell viability	Library kit;Library type;Multiplex genotype;Multiplex sample;Multiplex oligo;Pool ID;Sample ID;Modality 1;Modality 2;Modality 3;RNA amount;QC cell load recovery;QC tape fragment size;ExperimentMethod description;ExperimentMethod type;ExperimentMethod library_type;ExperimentMethod library_selection_methods;ExperimentMethod library_preparation;ExperimentMethod library_preparation_kit_retail_name;ExperimentMethod library_preparation_kit_manufacturer;ExperimentMethod primer;ExperimentMethod end_bias;ExperimentMethod target_regions;ExperimentMethod rnaseq_strandedness;ExperimentMethod instrument_model;ExperimentMethod sequencing_center;ExperimentMethod sequencing_read_length;ExperimentMethod sequencing_layout;ExperimentMethod target_coverage;ExperimentMethod flow_cell_id;ExperimentMethod flow_cell_type;ExperimentMethod sample_barcode_read;ExperimentMethod ega_accession;ExperimentMethod attributes;Experiment attributes	Modality 1 Fastq Prefix;Modality 2 Fastq Prefix;Modality 3 Fastq Prefix;Sequencing batch;Instrument model;Sequencing parameters;AnalysisMethod name;AnalysisMethod description;AnalysisMethod type;AnalysisMethod workflow_name;AnalysisMethod workflow_version;AnalysisMethod workflow_repository;AnalysisMethod workflow_doi;AnalysisMethod workflow_tasks;AnalysisMethod parameters;AnalysisMethod software_versions;AnalysisMethod attributes;Analysis title;Analysis description;Analysis type;Analysis ega_accession;Dataset title;Dataset description;Dataset types;Dataset ega_accession
+Study Protocol Parameters Name Term Accession Number		;;;;;;	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	;;;;;;;;;;;;;;;;;;;;;;;;
+Study Protocol Parameters Name Term Source REF		;;;;;;	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	;;;;;;;;;;;;;;;;;;;;;;;;
+Study Protocol Components Name				
+Study Protocol Components Type				
+Study Protocol Components Type Term Accession Number				
+Study Protocol Components Type Term Source REF				
+STUDY CONTACTS
+Study Person Last Name	
+Study Person First Name	
+Study Person Mid Initials	
+Study Person Email	
+Study Person Phone	
+Study Person Fax	
+Study Person Address	
+Study Person Affiliation	
+Study Person Roles	
+Study Person Roles Term Accession Number	
+Study Person Roles Term Source REF	

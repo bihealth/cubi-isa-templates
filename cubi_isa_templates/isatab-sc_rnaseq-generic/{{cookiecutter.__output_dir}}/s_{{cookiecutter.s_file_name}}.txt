@@ -1,0 +1,5 @@
+Source Name	Characteristics[Organism]	Term Source REF	Term Accession Number	Characteristics[Source type]	Characteristics[External reference]	Characteristics[Group]	Characteristics[Batch]	Characteristics[Sex]	Characteristics[Disease status]	Characteristics[HPO terms]	Protocol REF	Parameter Value[Method]	Performer	Date	Sample Name	Characteristics[Origin]	Characteristics[Condition]	Characteristics[Treatment]
+{% set sample_names = cookiecutter.sample_names.split(",") -%}
+{%- for sample_name in sample_names -%}
+patient{{loop.index}}	{{cookiecutter._organisms[cookiecutter.organism].name}}	NCBITAXON	http://purl.bioontology.org/ontology/NCBITAXON/{{cookiecutter._organisms[cookiecutter.organism].taxon}}	type{{loop.index}}		group{{loop.index}}	{{cookiecutter.batch}}	{% if loop.index % 2 == 1 %}male{% else %}female{% endif %}	healthy	HP:0000118	Sample collection		{{cookiecutter.center_contact}}	{{cookiecutter.date|default('2024-11-12')}}	{{sample_name|replace("-", "_")}}	origin{{loop.index}}	condition1	{% if loop.index == 1 %}none{% else %}treatment{{loop.index}}{% endif %}
+{% endfor %}
