@@ -38,5 +38,5 @@
   "__lib_strategy": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}WXS{% else %}WGS{% endif %}",
   "__lib_selection": "{% if cookiecutter.__measurement_abbreviation == 'WES' %}Hybrid Selection{% else %}RANDOM{% endif %}",
   "lib_layout": "PAIRED",
-  "__output_dir": "Required variable. Do not remove."
+  "__output_dir": "germline"
 }

@@ -12,7 +12,7 @@
   "sample_multiplexing": ["No", "SBT Pd 20-plex", "TOBis 35-plex", "Other"],
   "__s_file_name": "{{cookiecutter.investigation_identifier|replace(' ', '_')|replace('/', '_')}}",
   "__assay_prefix": "{{cookiecutter.__s_file_name}}",
-  "__output_dir": "Required variable. Do not remove.",
+  "__output_dir": "mass_cytometry",
   "__prompts__": {
     "investigation_identifier": "Short project title or acronym",
     "investigation_title": "Longer project title (optional)",

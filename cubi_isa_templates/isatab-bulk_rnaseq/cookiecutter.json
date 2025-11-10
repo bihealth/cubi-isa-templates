@@ -13,5 +13,5 @@
   "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
   "a_technology_type": "nucleotide sequencing",
   "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
-  "__output_dir": "Required variable. Do not remove."
+  "__output_dir": "bulk_rnaseq"
 }
