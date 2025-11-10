@@ -2,7 +2,7 @@
 
 -r requirements.txt
 
-altamisa==0.2.9
+altamisa==0.3.1
 black==23.9.1
 cookiecutter==2.3.1
 flake8==6.1.0
