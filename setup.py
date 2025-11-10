@@ -5,8 +5,6 @@ import os.path
 
 from setuptools import setup
 
-import versioneer
-
 
 def parse_requirements(path):
     """Parse ``requirements.txt`` at ``path``."""
@@ -27,6 +25,12 @@ with open("README.md") as readme_file:
     readme = readme_file.read()
 
 install_requirements = parse_requirements("requirements.txt")
+
+package_root = os.path.abspath(os.path.dirname(__file__))
+version = {}
+with open(os.path.join(package_root, "cubi_isa_templates/version.py")) as fp:
+    exec(fp.read(), version)
+version = version["__version__"]
 
 setup(
     author="Berlin Institute of Health, Core Unit Bioinformatics",
@@ -51,8 +55,7 @@ setup(
     name="cubi-isa-templates",
     packages=["cubi_isa_templates"],
     url="https://github.com/bihealth/cubi-isa-templates",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version=version,
     project_urls={
         "Changelog": "https://github.com/bihealth/cubi-isa-templates/blob/main/CHANGELOG.md",
     },

@@ -48,8 +48,7 @@ import os
 import typing
 
 import attr
-
-from . import _version
+from .version import __version__  # noqa
 
 #: Base directory to this file.
 _BASE_DIR = os.path.dirname(__file__)
@@ -149,5 +148,3 @@ _TEMPLATES = (
 
 #: Known ISA-tab templates.
 TEMPLATES = {tpl.name: tpl for tpl in _TEMPLATES}
-
-__version__ = _version.get_versions()["version"]
