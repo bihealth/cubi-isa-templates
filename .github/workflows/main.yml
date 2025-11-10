@@ -7,6 +7,21 @@ on:
   pull_request:
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Checkout repository
+        uses: actions/checkout@v5
+      - name: Install project Python dependencies
+        run: pip install -r requirements_dev.txt
+      - name: Check Python linting
+        run: flake8 .
+      - name: Check Python formatting
+        run: make black-check
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -26,10 +41,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install project Python dependencies
         run: pip install -r requirements_dev.txt
-      - name: Check Python linting
-        run: flake8 .
-      - name: Check Python formatting
-        run: make black-check
       - name: Run tests
         run: pytest
   build:
