@@ -19,7 +19,7 @@ jobs:
       url: https://pypi.org/p/cubi-isa-templates
     steps:
       - name: Create GitHub release
-        uses: GoogleCloudPlatform/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         id: release
         with:
           release-type: python
