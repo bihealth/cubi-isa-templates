@@ -74,5 +74,5 @@
     "instrument": "Select sequencer used for this project:",
     "is_triplet": "Add RNA sequencing assay?:"
   },
-  "__output_dir": "Required variable. Do not remove."
+  "__output_dir": "somatic"
 }
