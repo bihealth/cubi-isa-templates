@@ -1,6 +1,5 @@
 from fnmatch import fnmatch
 import shutil
-import typing
 
 from altamisa.apps import isatab_validate
 from cookiecutter.main import cookiecutter
