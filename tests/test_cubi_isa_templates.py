@@ -31,8 +31,8 @@ def test_isatabs(tpl, tmp_path):
                 invs = [f for f in output.iterdir() if fnmatch(f.name, "i_*.txt")]
                 assert len(invs) == 1
 
-                with output / invs[0].name as f:
-                    isatab_validate.main(input_investigation_file=f, show_duplicate_warnings=False)
+                f = str(output / invs[0].name)
+                isatab_validate.main(input_investigation_file=f, show_duplicate_warnings=False)
 
                 # cleanup
                 shutil.rmtree(output)
