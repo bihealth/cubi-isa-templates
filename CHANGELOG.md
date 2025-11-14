@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0](https://github.com/bihealth/cubi-isa-templates/compare/v0.1.2...v0.2.0) (2025-11-14)
+
+
+### Features
+
+* Simplify mass cytometry template ([#41](https://github.com/bihealth/cubi-isa-templates/issues/41)) ([aef8d77](https://github.com/bihealth/cubi-isa-templates/commit/aef8d77be6e0423ec86646012d3c132cdd7f06d4))
+
+
+### Bug Fixes
+
+* Update dependencies & CI ([#44](https://github.com/bihealth/cubi-isa-templates/issues/44)) ([aeb6f14](https://github.com/bihealth/cubi-isa-templates/commit/aeb6f147fcb42e815e30a713c5139fbd606240cb))
+
 ## v0.1.2
 - Fixed bulk_rnaseq template using wrong wrong configuration (#33)
 - Fixed parameter inconsistency with Fastq prefix
