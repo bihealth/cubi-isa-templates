@@ -23,6 +23,7 @@ jobs:
       - name: Check Python formatting
         run: make black-check
   test:
+    needs: lint
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -43,33 +44,3 @@ jobs:
         run: pip install -r requirements_dev.txt
       - name: Run tests
         run: pytest
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version:
-          - '3.10'
-          - '3.11'
-          - '3.12'
-          - '3.13'
-          - '3.14'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-      - name: Setup Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install project Python dependencies
-        run: pip install -r requirements_dev.txt
-      - name: Build all templates
-        run: |
-          for template in cubi_isa_templates/isatab-*
-          do
-            cookiecutter $template --no-input --output-dir build
-          done
-      - name: Upload test builds
-        uses: actions/upload-artifact@v4
-        with:
-          name: isatabs
-          path: build
