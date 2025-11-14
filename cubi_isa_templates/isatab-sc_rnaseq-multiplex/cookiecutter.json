@@ -1,0 +1,127 @@
+{
+  "investigation_title": "Investigation_Title",
+  "sample_names": "alpha,beta,gamma",
+  "a_measurement_type": "transcription profiling",
+  "_measurement_types": {
+      "transcription profiling" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
+         "source" : "OBI"
+      }
+  },
+  "a_technology_type": "nucleotide_sequencing",
+  "_technology_types": {
+      "nucleotide_sequencing" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000626",
+         "source" : "OBI"
+      }
+  },
+
+  "lib_kit": [
+    "SC3Pv3",
+    "SC3Pv2",
+    "SC5P-PE",
+    "SC5P-R2",
+    "threeprime",
+    "fiveprime"
+  ],
+  "organism": [
+    "Homo sapiens",
+    "Mus musculus"
+  ],
+  "batch": "1",
+  "_lib_kits": {
+    "SC3Pv3": {
+      "name": "SC3Pv3"
+    },
+    "SC3Pv2": {
+      "name": "SC3Pv2"
+    },
+    "SC5P-PE": {
+      "name": "SC5P-PE"
+    },
+    "SC5P-R2": {
+      "name": "SC5P-R2"
+    },
+    "threeprime": {
+      "name": "threeprime"
+    },
+    "fiveprime": {
+      "name": "fiveprime"
+    }
+  },
+  "_organisms": {
+    "Homo sapiens": {
+      "name": "Homo sapiens",
+      "taxon": "9606"
+    },
+    "Mus musculus": {
+      "name": "Mus musculus",
+      "taxon": "10090"
+    }
+  },
+  "instrument": "Illumina NovaSeq 6000",
+  "center_name": "",
+  "center_contact": "",
+  "date": "2024-11-12",
+
+  "sc_dissociation_method": [
+    "Enzymatic dissociation",
+    "Mechanical dissociation", 
+    "Cold protease-free dissociation"
+  ],
+  "sc_library_type": [
+    "GEX",
+    "GEX+antibody",
+    "GEX+VDJ",
+    "GEX+other",
+    "GEX+antibody+VDJ",
+    "GEX+other+another"
+  ],
+  "sc_multiplex_genotype": ["FALSE", "TRUE"],
+  "sc_multiplex_sample": [ 
+    "Probe Barcode",
+    "Cell Multiplexing Oligo",
+    "Hashtag Antibody",
+    "On-chip multiplexing",
+    "FALSE"
+  ], 
+  "sc_multiplex_oligo": [
+    "BC001",
+    "CMO301",
+    "OB1",
+    "TotalSeq-A"],
+  "sc_modality_1": [
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+  "sc_modality_2": [
+    "",
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+  "sc_modality_3": [
+    "",
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+
+  "study_title": "{{cookiecutter.investigation_title}}",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
+  "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
+  "a_measurement_abbreviation": "scRNA_seq",
+  "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
+  "sample_type": "",
+  "lib_strategy": "scRNA-seq",
+  "lib_selection": "PolyA",
+  "lib_layout": [ "PAIRED", "SINGLE" ],
+  "__output_dir": "{{cookiecutter.investigation_title}}_isatab"
+}

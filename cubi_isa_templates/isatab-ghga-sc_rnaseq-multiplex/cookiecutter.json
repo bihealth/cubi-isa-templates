@@ -1,0 +1,161 @@
+{
+  "investigation_title": "Single Cell RNA Sequencing Study",
+  "investigation_identifier": "GHGA-INV-{{cookiecutter.investigation_title|replace(' ', '_')|upper}}",
+  "investigation_description": "GHGA-compliant single cell RNA sequencing investigation with comprehensive metadata",
+  "investigation_submission_date": "2024-10-27",
+  "investigation_public_release_date": "2025-01-01",
+  
+  "study_description": "e.g. Single cell RNA sequencing study",
+  "study_types": "Single Cell Analysis;Transcriptomics",
+  "study_ega_accession": "e.g. EGAS00001008000",
+  "study_affiliations": "e.g. Charité",
+  "study_attributes": "e.g. Single cell transcriptomics;High throughput sequencing;Genomics",
+  "study_has_study_files": "true",
+  "study_has_data_files": "true",
+  
+  "publication_title": "",
+  "publication_abstract": "",
+  "publication_author": "",
+  "publication_year": "",
+  "publication_journal": "",
+  "publication_doi": "",
+  "publication_xref": "",
+  
+  "data_access_policy_name": "e.g. DAP_myname",
+  "data_access_policy_description": "e.g. Data access policy for genomic research data with ethical and legal compliance requirements",
+  "data_access_policy_text": "To request access to the dataset please contact the Platform fuer Personalisierte Krebsmedizin at the Charité (PPK-C). Your request will be evaluated by the PPK-C Data Access Committee (DAC). As soon as a positive decision is made, you will be provided with a data transfer agreement (DTA). After the DTA has been fully signed, access to the requested data is granted.",
+  "data_access_policy_url": "",
+  "data_use_permission_term": "DISEASE_SPECIFIC_RESEARCH",
+  "data_use_permission_id": "DUO:0000007",
+  "data_use_modifier_terms": "RESEARCH_SPECIFIC_RESTRICTIONS",
+  "data_use_modifier_ids": "DUO:0000012",
+  "data_access_policy_ega_accession": "",
+  "data_access_committee_ref": "e.g. DAC_myname",
+  
+  "data_access_committee_email": "ppk-c@charite.de",
+  "data_access_committee_institute": "Charité PPK-C",
+  "data_access_committee_ega_accession": "",
+
+  "sample_names": "alpha,beta,gamma",
+  "a_measurement_type": "transcription profiling",
+  "_measurement_types": {
+      "transcription profiling" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
+         "source" : "OBI"
+      }
+  },
+  "a_technology_type": "nucleotide_sequencing",
+  "_technology_types": {
+      "nucleotide_sequencing" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000626",
+         "source" : "OBI"
+      }
+  },
+
+  "lib_kit": [
+    "SC3Pv3",
+    "SC3Pv2",
+    "SC5P-PE",
+    "SC5P-R2",
+    "threeprime",
+    "fiveprime"
+  ],
+  "organism": [
+    "Homo sapiens",
+    "Mus musculus"
+  ],
+  "batch": "1",
+  "_lib_kits": {
+    "SC3Pv3": {
+      "name": "SC3Pv3"
+    },
+    "SC3Pv2": {
+      "name": "SC3Pv2"
+    },
+    "SC5P-PE": {
+      "name": "SC5P-PE"
+    },
+    "SC5P-R2": {
+      "name": "SC5P-R2"
+    },
+    "threeprime": {
+      "name": "threeprime"
+    },
+    "fiveprime": {
+      "name": "fiveprime"
+    }
+  },
+  "_organisms": {
+    "Homo sapiens": {
+      "name": "Homo sapiens",
+      "taxon": "9606"
+    },
+    "Mus musculus": {
+      "name": "Mus musculus",
+      "taxon": "10090"
+    }
+  },
+  "instrument": "Illumina NovaSeq 6000",
+  "center_name": "BIH Genomics Technology Platform",
+  "center_contact": "",
+  "date": "2024-11-12",
+
+  "sc_dissociation_method": [
+    "Enzymatic dissociation",
+    "Mechanical dissociation", 
+    "Cold protease-free dissociation"
+  ],
+  "sc_library_type": [
+    "GEX",
+    "GEX+antibody",
+    "GEX+VDJ",
+    "GEX+other",
+    "GEX+antibody+VDJ",
+    "GEX+other+another"
+  ],
+  "sc_multiplex_genotype": ["FALSE", "TRUE"],
+  "sc_multiplex_sample": ["FALSE", 
+    "Probe Barcode",
+    "Cell Multiplexing Oligo",
+    "Hashtag Antibody",
+    "On-chip multiplexing"], 
+  "sc_multiplex_oligo": [
+    "BC001",
+    "CMO301",
+    "OB1",
+    "TotalSeq-A"],
+  "sc_modality_1": [
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+  "sc_modality_2": [
+    "",
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+  "sc_modality_3": [
+    "",
+    "Gene Expression",
+    "VDJ-T",
+    "VDJ-B", 
+    "Antibody Capture",
+    "Multiplexing Capture"
+  ],
+
+  "study_title": "{{cookiecutter.investigation_title}}",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')}}",
+  "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
+  "a_measurement_abbreviation": "scRNA_seq",
+  "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
+  "sample_type": "",
+  "lib_strategy": "scRNA-seq",
+  "lib_selection": "PolyA",
+  "lib_layout": [ "PAIRED", "SINGLE" ],
+  "__output_dir": "{{cookiecutter.investigation_title}}_isatab"
+}
